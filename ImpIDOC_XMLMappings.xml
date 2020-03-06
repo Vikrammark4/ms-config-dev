@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Mappings>
+	<ImpIDOC_XML class="CnvXml" >
+		<Record>
+			<Maprule match="1" target="Header" typeDef="EDI_DC40" type="new"  value="PEXR2002/IDOC/EDI_DC40" />
+			<Maprule match="2" target="Header" typeDef="E1EDK03" type="append"  value="PEXR2002/IDOC/E1EDK03" />
+			<Maprule match="3" target="Header" typeDef="E1EDK02" type="append"  value="PEXR2002/IDOC/E1EDK02" />
+			<Maprule match="4" target="Header" typeDef="E1EDK12" type="append"  value="PEXR2002/IDOC/E1EDK12" />
+			<Maprule match="5" target="Header" typeDef="E1IDKU2" type="append"  value="PEXR2002/IDOC/E1IDKU2" />
+			<Maprule match="6" target="Header" typeDef="E1IDT01" type="append"  value="PEXR2002/IDOC/E1IDT01" />
+			<Maprule match="7" target="Header" typeDef="E1IDKU3" type="append"  value="PEXR2002/IDOC/E1IDKU3" />
+			<Maprule match="8" target="Header" typeDef="E1IDKU4" type="append"  value="PEXR2002/IDOC/E1IDKU4" />
+			<Maprule match="9" target="Header/Item" typeDef="E1IDKU5" type="new"  value="PEXR2002/IDOC/E1IDKU5" />
+			<Maprule match="10" target="Header/IDB02" typeDef="E1IDB02" type="new"  value="PEXR2002/IDOC/E1IDB02" />
+			<Maprule match="11" target="Header" typeDef="E1IDBL2" type="append"  value="PEXR2002/IDOC/E1IDBL2" />
+			<Maprule match="12" target="Header/EDKA1" typeDef="E1EDKA1" type="new"  value="PEXR2002/IDOC/E1EDKA1" />
+			<Maprule match="13" target="Header/Item/ST" typeDef="E1IDPU1" type="new"  value="PEXR2002/IDOC/E1IDPU1" />
+			<Maprule match="14" target="Header/Item/ST" typeDef="E1IDPU5" type="append"  value="PEXR2002/IDOC/E1IDPU1/E1IDPU5" />
+			<Maprule match="15" target="Header/Item/ST" typeDef="E1EDP03" type="append"  value="PEXR2002/IDOC/E1IDPU1/E1EDP03" />
+			<Maprule match="16" target="Header/Item/ST" typeDef="E1EDP02" type="append"  value="PEXR2002/IDOC/E1IDPU1/E1EDP02" />
+			<Maprule match="17" target="Header" typeDef="E1IDKU7" type="append"  value="PEXR2002/IDOC/E1IDKU7" />
+		</Record>
+
+		<EDI_DC40>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/EDI_DC40/MESTYP" value="PmtMtdH"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/EDI_DC40/DOCNUM" value="PmtInfIdH"  />
+		</EDI_DC40>
+
+		<E1EDK03>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1EDK03/IDDAT" value="Tmp_EDK03_IDDAT"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1EDK03/DATUM" value="Tmp_EDK03_DATUM"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1EDK03/UZEIT" value="Tmp_EDK03_UZEIT"  />
+		</E1EDK03>
+
+		<E1EDK02>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1EDK02/BELNR" value="Zahlungsbeleg"  />
+		</E1EDK02>
+
+		<E1EDK12>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1EDK12/QUALF" value="Tmp_EDK12_QUALF"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1EDK12/BELNR" value="ChqNb"  />
+		</E1EDK12>
+
+		<E1IDKU2>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDKU2/BUSGEO" value="IdePmtH"  />
+		</E1IDKU2>
+
+		<E1IDT01>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDT01/TXT01" value="RmtInf1"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDT01/TXT02" value="RmtInf2"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDT01/TXT03" value="RmtInf3"  />
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1IDT01/TXT04" value="RmtInf4"  />
+			<Maprule match="5" matchpath="PEXR2002/IDOC/E1IDT01/TXT05" value="RmtInf5"  />
+			<Maprule match="6" matchpath="PEXR2002/IDOC/E1IDT01/TXT06" value="RmtInf6"  />
+			<Maprule match="7" matchpath="PEXR2002/IDOC/E1IDT01/TXT07" value="RmtInf7"  />
+			<Maprule match="8" matchpath="PEXR2002/IDOC/E1IDT01/TXT08" value="RmtInf8"  />
+			<Maprule match="9" matchpath="PEXR2002/IDOC/E1IDT01/TXT09" value="RmtInf9"  />
+			<Maprule match="10" matchpath="PEXR2002/IDOC/E1IDT01/TXT010" value="RmtInf10"  />
+			<Maprule match="11" matchpath="PEXR2002/IDOC/E1IDT01/TXT011" value="RmtInf11"  />
+			<Maprule match="12" matchpath="PEXR2002/IDOC/E1IDT01/TXT012" value="RmtInf12"  />
+			<Maprule match="13" matchpath="PEXR2002/IDOC/E1IDT01/TXT013" value="RmtInf13"  />
+			<Maprule match="14" matchpath="PEXR2002/IDOC/E1IDT01/TXT014" value="RmtInf14"  />
+		</E1IDT01>
+
+		<E1IDKU3>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDKU3/PAIRZAWE" value="PmtMtd"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDKU3/PAIUZAWE" value="ZH_PaymtypH1"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDKU3/PAYRUNCC" value="ZBUKR"  />
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1IDKU3/PAYRUNID" value="ZH_PaymtypH2"  />
+			<Maprule match="5" matchpath="PEXR2002/IDOC/E1IDKU3/PAYRUNDT" value="PAYINDATE"  />
+			<Maprule match="6" matchpath="PEXR2002/IDOC/E1IDKU3/EXTPAYM" value="UrgntPmtH"  />
+			<Maprule match="7" matchpath="PEXR2002/IDOC/E1IDKU3/EXTDESC" value="DbtrNmIdentH"  />
+			<Maprule match="8" matchpath="PEXR2002/IDOC/E1IDKU3/RELNUM" value="IptrRefIdH"  />
+			<Maprule match="9" matchpath="PEXR2002/IDOC/E1IDKU3/INSCODE1" value="InstrKey1"  />
+			<Maprule match="10" matchpath="PEXR2002/IDOC/E1IDKU3/INSCODE2" value="InstrKey2"  />
+			<Maprule match="11" matchpath="PEXR2002/IDOC/E1IDKU3/INSCODE3" value="InstrKey3"  />
+			<Maprule match="12" matchpath="PEXR2002/IDOC/E1IDKU3/INSCODE4" value="InstrKey4"  />
+		</E1IDKU3>
+
+		<E1IDKU4>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDKU4/FCAREGUL" value="PaymRegul"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDKU4/FCAGIDBN" value="ChrgFIIDH"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDKU4/FCAGKNTO" value="ChrgAccountH"  />
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1IDKU4/FCAGWAER" value="ChrgCurrencyH"  />
+		</E1IDKU4>
+
+		<E1IDKU5>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDKU5/MOABETR" value="InstdAmt"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDKU5/CUXWAERZ" value="AmtCcy"  />
+			<!-- is not filled by SAP -->
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDKU5/CUXKURS" value="ExcRate"  />
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1IDKU5/CUXDATUM" value="ExcRateDate"  />
+		</E1IDKU5>
+
+		<E1IDB02>
+			<!-- BB, BA, BE, AG, PA, I2, I3  -->
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDB02/FIIQUALI" value="Tmp_IDB02_FIIQUALI"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDB02/FIIBKENN" value="Tmp_IDB02_FIIBKENN"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDB02/FIIBKCDE" value="Tmp_IDB02_FIIBKCDE"  />
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1IDB02/FIIBKUKN" value="Tmp_IDB02_FIIBKUKN"  />
+			<Maprule match="5" matchpath="PEXR2002/IDOC/E1IDB02/FIIBKNAM" value="Tmp_IDB02_FIIBKNAM"  />
+			<Maprule match="6" matchpath="PEXR2002/IDOC/E1IDB02/FIIBKORT" value="Tmp_IDB02_FIIBKORT"  />
+			<Maprule match="7" matchpath="PEXR2002/IDOC/E1IDB02/FIIBLAND" value="Tmp_IDB02_FIIBLAND"  />
+			<Maprule match="8" matchpath="PEXR2002/IDOC/E1IDB02/FIIKONTO" value="Tmp_IDB02_FIIKONTO"  />
+			<Maprule match="9" matchpath="PEXR2002/IDOC/E1IDB02/FIIKNAME" value="Tmp_IDB02_FIIKNAME"  />
+			<Maprule match="10" matchpath="PEXR2002/IDOC/E1IDB02/FIIKNAM2" value="Tmp_IDB02_FIIKNAM2"  />
+			<Maprule match="11" matchpath="PEXR2002/IDOC/E1IDB02/FIIKWAER" value="Tmp_IDB02_FIIKWAER"  />
+			<Maprule match="12" matchpath="PEXR2002/IDOC/E1IDB02/COMNUMM1" value="Tmp_IDB02_COMNUMM1"  />
+			<Maprule match="13" matchpath="PEXR2002/IDOC/E1IDB02/COMNART1" value="Tmp_IDB02_COMNART1"  />
+			<Maprule match="14" matchpath="PEXR2002/IDOC/E1IDB02/FIIBKONT" value="Tmp_IDB02_FIIBKONT"  />
+			<Maprule match="15" matchpath="PEXR2002/IDOC/E1IDB02/FIIBRANCH" value="Tmp_IDB02_FIIBRANCH"  />
+			<Maprule match="16" matchpath="PEXR2002/IDOC/E1IDB02/STRAS" value="Tmp_IDB02_STRAS"  />
+			<Maprule match="17" matchpath="PEXR2002/IDOC/E1IDB02/PFACH" value="Tmp_IDB02_PFACH"  />
+			<Maprule match="18" matchpath="PEXR2002/IDOC/E1IDB02/PSTLZ" value="Tmp_IDB02_PSTLZ"  />
+			<Maprule match="19" matchpath="PEXR2002/IDOC/E1IDB02/PSTL2" value="Tmp_IDB02_PSTL2"  />
+		</E1IDB02>
+
+		<E1IDBL2>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDBL2/FIIQUALI" value="IntmAdrLine3"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBKENN" value="IntmNmBIC"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBKCDE" value="IntmAdrLine3"  />
+			<!-- if this information does not exist in IDB02  -->
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBKENN" value="Tmp_IntrAgt1FIBIC"  />
+			<Maprule match="5" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBKNAM" value="Tmp_IntAg1Nm"  />
+			<Maprule match="6" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBKORT " value="Tmp_ZI_IntAgt1AdrTwn"  />
+			<Maprule match="7" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBLAND" value="Tmp_IntRmFICtry"  />
+			<Maprule match="8" matchpath="PEXR2002/IDOC/E1IDBL2/FIIBRANCH" value="Tmp_IntAg1BrnchId"  />
+			<Maprule match="9" matchpath="PEXR2002/IDOC/E1IDBL2/STRAS" value="Tmp_ZI_IntAg1AdrStr"  />
+			<Maprule match="10" matchpath="PEXR2002/IDOC/E1IDBL2/PSTLZ" value="Tmp_ZI_IntAg1AdrPCd"  />
+			<Maprule match="11" matchpath="PEXR2002/IDOC/E1IDBL2/PSTL2" value="Tmp_ZI_IntAg1AdrDept"  />
+		</E1IDBL2>
+
+		<E1EDKA1>
+			<!-- Logic for filling the name and address fields      -->
+			<!-- CreditTransfer and Check:                          -->
+			<!-- qualifier AG -> Iptr fields                        -->
+			<!--           ZA -> Dbtr fields                        -->
+			<!--           ZE -> Cdtr fields                        -->
+			<!--           BE  -> Cdtr fields if ZE does not exist  -->
+			<!-- DirectDebit:                                       -->
+			<!-- qualifier BE -> Iptr fields                        -->
+			<!--           ZE -> Dbtr fields                        -->
+			<!--           ZA -> Cdtr fields                        -->
+			<!--           AG -> Cdtr fields if ZE does not exist   -->
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1EDKA1/PARVW" value="Tmp_EDKA1_PARVW"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1EDKA1/PARTN" value="Tmp_E1EDKA1_PARTN"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1EDKA1/LIFNR" value="Tmp_E1EDKA1_LIFNR"  />
+			<Maprule match="4" matchpath="PEXR2002/IDOC/E1EDKA1/NAME1" value="Tmp_E1EDKA1_NAME1"  />
+			<Maprule match="5" matchpath="PEXR2002/IDOC/E1EDKA1/NAME2" value="Tmp_E1EDKA1_NAME2"  />
+			<Maprule match="6" matchpath="PEXR2002/IDOC/E1EDKA1/NAME3" value="Tmp_E1EDKA1_NAME3"  />
+			<Maprule match="7" matchpath="PEXR2002/IDOC/E1EDKA1/NAME4" value="Tmp_E1EDKA1_NAME4"  />
+			<Maprule match="8" matchpath="PEXR2002/IDOC/E1EDKA1/STRAS" value="Tmp_E1EDKA1_STRAS"  />
+			<Maprule match="9" matchpath="PEXR2002/IDOC/E1EDKA1/STRS2" value="Tmp_E1EDKA1_STRS2"  />
+			<Maprule match="10" matchpath="PEXR2002/IDOC/E1EDKA1/PFACH" value="Tmp_E1EDKA1_PFACH"  />
+			<Maprule match="11" matchpath="PEXR2002/IDOC/E1EDKA1/ORT01" value="Tmp_E1EDKA1_ORT01"  />
+			<Maprule match="12" matchpath="PEXR2002/IDOC/E1EDKA1/PSTLZ" value="Tmp_E1EDKA1_PSTLZ"  />
+			<Maprule match="13" matchpath="PEXR2002/IDOC/E1EDKA1/PSTL2" value="Tmp_E1EDKA1_PSTL2"  />
+			<Maprule match="14" matchpath="PEXR2002/IDOC/E1EDKA1/LAND1" value="Tmp_E1EDKA1_LAND1"  />
+			<Maprule match="15" matchpath="PEXR2002/IDOC/E1EDKA1/REGIO" value="Tmp_E1EDKA1_REGIO"  />
+		</E1EDKA1>
+
+		<E1IDPU1>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDPU1/DOCNAME" value="Tmp_DOCNAME"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDPU1/DOCNAME" value="SRmtInvCtNm"  />
+		</E1IDPU1>
+
+		<E1IDPU5>
+			<!-- Amounts at item level - save in Header/Item/ST/ fields -->
+			<!-- depending on MOAQUAL fill corresponding fields by streamfunctions -->
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDPU1/E1IDPU5/MOAQUAL" value="Tmp_IDPU5_MOAQUAL"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDPU1/E1IDPU5/MOABETR" value="Tmp_SRmtRDoc_Amt"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDPU1/E1IDPU5/CUXWAERZ" value="Tmp_SRmtRDoc_Ccy"  />
+		</E1IDPU5>
+
+		<E1EDP03>
+			<!-- depending on IDDAT, fill the corresponding date fields by streamfunctions -->
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDPU1/E1EDP03/IDDAT" value="Tmp_EDP03_IDDAT"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDPU1/E1EDP03/DATUM" value="Tmp_SRmtRDocRelDt"  />
+		</E1EDP03>
+
+		<E1EDP02>
+			<!-- depending on QUALF, fill the corresponding date fields by streamfunctions  -->
+			<!-- Document Reference data - save in Header/Item/ST/ fields -->
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDPU1/E1EDP02/QUALF" value="Tmp_EDP02_QUALF"  />
+			<Maprule match="2" matchpath="PEXR2002/IDOC/E1IDPU1/E1EDP02/BELNR" value="Tmp_SRmtRDoc_Nb"  />
+			<Maprule match="3" matchpath="PEXR2002/IDOC/E1IDPU1/E1EDP02/DATUM" value="Tmp_SRmtRDoc_Dt"  />
+		</E1EDP02>
+
+		<E1IDKU7>
+			<Maprule match="1" matchpath="PEXR2002/IDOC/E1IDKU7/AUTKEY" value="AuthoH"  />
+		</E1IDKU7>
+
+		<Assignments>
+			<Maprule match="FormatDatum" value="Header/PAYINDATE,Header/ReqdExctnDtH,Header/MaFaelligDate,Header/ChqMrtryDt" />
+			<Maprule match="DatumFormate" value="yyyyMMdd" />
+			<Maprule match="FormatDateTime" value="Header/xxxCreDtTmH" />
+			<Maprule match="DateTimeFormate" value="yyyyMMddhhmmssSS" />
+			<Maprule match="AddFieldDelimiter" value="%!x=y!z§%" />
+			<Maprule match="AddFieldEqualSign" value="%!x#y!z§%" />
+			<Maprule match="EncryptionFlag" value="1" />
+		</Assignments>
+		<FieldFunctions />
+		<RecordFunctions />
+		<StreamFunctions>
+			<Maprule functionName="InsertElements" param="Header/PmtDocRefH,Header/GrpgH,Header/OrFmtH,Header/Item/Tmp_PFACHText,Header/Item/Tmp_PFACH,Header/Item/Tmp_PSTL2,Header/ChqNb;,MIXD,IDOC XML,P.O.Box,1,," />
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/Tmp_EDK12_QUALF,Header/Tmp_EDK12_QUALF;079,026;Header/PmtDocRefH,Header/ChqNb;Header/ChqNb,Header/ChqNb;," />
+			<!-- delete Tmp-Fields EDK12 -->
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK12_QUALF;.*;" />
+			<Maprule functionName="DeleteIfEmpty" param="Header/Tmp_EDK12_QUALF,Header/ChqNb,Header/PmtDocRefH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/PmtMtdH,Header/PmtMtdH,Header/PmtMtdH,Header/ChqNb;"
+					 param2="(?i)PAYEXT.*,(?i)DIRDEB.*,Direct Debit,.+;"
+					 param3="Header/PmtMtdH,Header/PmtMtdH,Header/ChqNb,Header/PmtMtdH;"
+					 param4="Credit Transfer,Direct Debit,,Check;"
+					 param5="Header/PmtMtdH,Header/PmtMtdH,Header/ChqNb,Header/PmtMtdH;"
+			/>
+			<!-- EDK03 -->
+			<Maprule functionName="SetFieldIndex" param="Header/Tmp_EDK03_IDDAT,Header/Tmp_EDK03_DATUM" />
+			<Maprule functionName="InsertElements" param="Header/CreDtTmH,Header/ReqdExctnDtH,Header/MaFaelligDate,Header/ChqMrtryDt,Header/Item/ReqdExctnDtH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_EDK03_IDDAT1,Header/Tmp_EDK03_IDDAT2,Header/Tmp_EDK03_IDDAT3;"
+					 param2="011,011,011;"
+					 param3="Header/CreDtTmH,Header/CreDtTmH,Header/CreDtTmH;"
+					 param4="Header/Tmp_EDK03_DATUM1,Header/Tmp_EDK03_DATUM2,Header/Tmp_EDK03_DATUM3;"
+					 param5="Header/CreDtTmH,Header/CreDtTmH,Header/CreDtTmH;"
+			/>
+			<Maprule functionName="ConcatFields" param="Header/CreDtTmH,Header/Tmp_EDK03_UZEIT;CreDtTmH;" />
+			<Maprule functionName="DeleteIfEmpty" param="Header/CreDtTmH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_EDK03_IDDAT1,Header/Tmp_EDK03_IDDAT2,Header/Tmp_EDK03_IDDAT3;"
+					 param2="017,017,017;"
+					 param3="Header/ReqdExctnDtH,Header/ReqdExctnDtH,Header/ReqdExctnDtH;"
+					 param4="Header/Tmp_EDK03_DATUM1,Header/Tmp_EDK03_DATUM2,Header/Tmp_EDK03_DATUM3;"
+					 param5="Header/ReqdExctnDtH,Header/ReqdExctnDtH,Header/ReqdExctnDtH;"
+			/>
+			<!-- ChqMrtryDt = ReqdExctnDtH -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/ReqdExctnDtH,Header/Tmp_EDK03_IDDAT1,Header/Tmp_EDK03_IDDAT2,Header/Tmp_EDK03_IDDAT3;"
+					 param2=".*,028,028,028;"
+					 param3="Header/ChqMrtryDt,Header/MaFaelligDate,Header/MaFaelligDate,Header/MaFaelligDate;"
+					 param4="Header/ReqdExctnDtH,Header/Tmp_EDK03_DATUM1,Header/Tmp_EDK03_DATUM2,Header/Tmp_EDK03_DATUM3;"
+					 param5="Header/ChqMrtryDt,Header/MaFaelligDate,Header/MaFaelligDate,Header/MaFaelligDate;"
+			/>
+			<!-- delete Tmp-Fields EDK03 -->
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_IDDAT1;.*;" />
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_IDDAT2;.*;" />
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_IDDAT3;.*;" />
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_DATUM1;.*;" />
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_DATUM2;.*;" />
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_DATUM3;.*;" />
+			<Maprule functionName="StringReplace" param="Header/Tmp_EDK03_UZEIT;.*;" />
+			<Maprule functionName="DeleteIfEmpty" param="Header/Tmp_EDK03_IDDAT1,Header/Tmp_EDK03_IDDAT2,Header/Tmp_EDK03_IDDAT3,Header/Tmp_EDK03_DATUM1,Header/Tmp_EDK03_DATUM2,Header/Tmp_EDK03_DATUM3,Header/Tmp_EDK03_UZEIT" />
+
+			<!-- E1IDB02: can occur 1-4 times -->
+			<Maprule functionName="InsertElements" param="Header/IDB02/TMP_COPY,Header/IDB02/TMP_NO_BIC,Header/IDB02/Tmp_IDB02_FIIQUALI,Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKCDE,Header/IDB02/Tmp_IDB02_FIIBKUKN,Header/IDB02/Tmp_IDB02_FIIBKNAM,Header/IDB02/Tmp_IDB02_FIIBKORT,Header/IDB02/Tmp_IDB02_FIIBLAND,Header/IDB02/Tmp_IDB02_FIIKONTO,Header/IDB02/Tmp_IDB02_FIIKNAME,Header/IDB02/Tmp_IDB02_FIIKNAM2,Header/IDB02/Tmp_IDB02_FIIKWAER,Header/IDB02/Tmp_IDB02_COMNUMM1,Header/IDB02/Tmp_IDB02_COMNART1,Header/IDB02/Tmp_IDB02_FIIBKONT,Header/IDB02/Tmp_IDB02_FIIBRANCH,Header/IDB02/Tmp_IDB02_STRAS,Header/IDB02/Tmp_IDB02_PFACH,Header/IDB02/Tmp_IDB02_PSTLZ,Header/IDB02/Tmp_IDB02_PSTL2" />
+			<Maprule functionName="InsertElements" param="Header/IDB02/IptrFIIDH,Header/IDB02/TmpKENN_DbtrFIBICH,Header/IDB02/TmpKUKN_DbtrFIBICH,Header/IDB02/DbtrFIIDH,Header/IDB02/Tmp_DbtrFIIDH,Header/IDB02/DbtrFIBICH,Header/IDB02/Tmp_DbtrFIBIC,Header/IDB02/DbtrBankname,Header/IDB02/ZH_IptrFICity,Header/IDB02/IptrNmBEIH,Header/IDB02/IptrFICtryH,Header/IDB02/IptrLcAccCtryH,Header/IDB02/IptrLcAccH,Header/IDB02/DbtrLcAcc,Header/IDB02/DbtrAdrLineH1,Header/IDB02/DbtrAdrLineH2,Header/IDB02/RemCcyH" />
+
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/IDB02/Tmp_IDB02_FIIQUALI;"
+					 param2="(BA|AG);"
+					 param3="Header/IDB02/IptrFIIDH,Header/IDB02/DbtrFIBICH,Header/IDB02/TmpKENN_DbtrFIBICH,Header/IDB02/TmpKUKN_DbtrFIBICH,Header/IDB02/DbtrFIIDH,Header/IDB02/DbtrFIBIC,Header/IDB02/DbtrBankname,"
+					 param4="Header/IDB02/ZH_IptrFICity,Header/IDB02/IptrNmBEIH,Header/IDB02/IptrFICtryH,Header/IDB02/IptrLcAccCtryH,Header/IDB02/IptrLcAccH,Header/IDB02/DbtrLcAcc,Header/IDB02/DbtrAdrLineH1,"
+					 param5="Header/IDB02/DbtrAdrLineH2,Header/IDB02/RemCcyH,Header/IDB02/ZH_DBTRACCTYP;"
+					 param6="Header/IDB02/Tmp_IDB02_FIIBKUKN,Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKUKN,Header/IDB02/Tmp_IDB02_FIIBKUKN,"
+					 param7="Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKNAM,Header/IDB02/Tmp_IDB02_FIIBKORT,Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBLAND,"
+					 param8="Header/IDB02/Tmp_IDB02_FIIBLAND,Header/IDB02/Tmp_IDB02_FIIKONTO,Header/IDB02/Tmp_IDB02_FIIKONTO,Header/IDB02/Tmp_IDB02_FIIKNAME,Header/IDB02/Tmp_IDB02_FIIKNAM2,"
+					 param9="Header/IDB02/Tmp_IDB02_FIIKWAER,Header/IDB02/Tmp_IDB02_FIIBKONT"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/IDB02/IptrFIIDH,Header/IDB02/TmpKENN_DbtrFIBICH,Header/IDB02/TmpKUKN_DbtrFIBICH,Header/IDB02/DbtrFIIDH,Header/IDB02/Tmp_DbtrFIIDH,Header/IDB02/DbtrFIBICH,Header/IDB02/Tmp_DbtrFIBIC,Header/IDB02/DbtrBankname,Header/IDB02/ZH_IptrFICity,Header/IDB02/IptrNmBEIH,Header/IDB02/IptrFICtryH,Header/IDB02/IptrLcAccCtryH,Header/IDB02/IptrLcAccH,Header/IDB02/DbtrLcAcc,Header/IDB02/DbtrAdrLineH1,Header/IDB02/DbtrAdrLineH2,Header/IDB02/RemCcyH" />
+
+			<Maprule functionName="InsertElements" param="Header/IDB02/CdtrFIBIC,Header/IDB02/CdtrFIID,Header/IDB02/CdtrFINm,Header/IDB02/Tmp_FIIBKORT,Header/IDB02/CdtrFICtry,Header/IDB02/CdtrIBAN,Header/IDB02/CdtrLcAcc,Header/IDB02/CdtrNm,Header/IDB02/ComParamH,Header/IDB02/ComParamCdH,Header/IDB02/CdtrFIAdrLine1,Header/IDB02/Tmp_PFACH,Header/IDB02/CdtrFIAdrLine2,Header/IDB02/Tmp_PSTL2"/>
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/IDB02/Tmp_IDB02_FIIQUALI;"
+					 param2="(BE|BB|PA);"
+					 param3="Header/IDB02/CdtrFIBIC,Header/IDB02/CdtrFIID,Header/IDB02/CdtrNm,Header/IDB02/CdtrFINm,Header/IDB02/Tmp_FIIBKORT,Header/IDB02/CdtrFICtry,Header/IDB02/CdtrIBAN,Header/IDB02/CDTRACCTYP,"
+					 param4="Header/IDB02/CdtrLcAcc,Header/IDB02/ComParamH,Header/IDB02/ComParamCdH,Header/IDB02/CdtrFIAdrLine1,Header/IDB02/Tmp_PFACH,Header/IDB02/CdtrFIAdrLine2,Header/IDB02/Tmp_PSTL2;"
+					 param5="Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKUKN,Header/IDB02/Tmp_IDB02_FIIKNAME,Header/IDB02/Tmp_IDB02_FIIBKNAM,Header/IDB02/Tmp_IDB02_FIIBKORT,"
+					 param6="Header/IDB02/Tmp_IDB02_FIIBLAND,Header/IDB02/Tmp_IDB02_FIIKONTO,Header/IDB02/Tmp_IDB02_FIIBKONT,Header/IDB02/Tmp_IDB02_FIIKONTO,Header/IDB02/Tmp_IDB02_COMNUMM1,"
+					 param7="Header/IDB02/Tmp_IDB02_COMNART1,Header/IDB02/Tmp_IDB02_STRAS,Header/IDB02/Tmp_IDB02_PFACH,Header/IDB02/Tmp_IDB02_PSTLZ,Header/IDB02/Tmp_IDB02_PSTL2"
+			/>
+
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/IDB02/CdtrFIID,Header/IDB02/CdtrFIBIC;"
+					 param2="^$,[A-Z]{6}[A-Z2-9][A-NP-Z0-9]([A-Z0-9]{3})?;"
+					 param3="Header/IDB02/CdtrFIID,Header/IDB02/CdtrFIBIC;"
+					 param4="Header/IDB02/CdtrFIBIC,Header/IDB02/CdtrFIBIC;"
+					 param5="Header/IDB02/CdtrFIID,"
+			/>
+
+            <Maprule functionName="DeleteFieldOrNode" param="Header/IDB02/TMP_NO_BIC,Header/IDB02/TMP_COPY" />
+			<Maprule functionName="DeleteIfEmpty" param="Header/IDB02/CdtrFIBIC,Header/IDB02/CdtrFIID,Header/IDB02/CdtrFINm,Header/IDB02/Tmp_FIIBKORT,Header/IDB02/CdtrFICtry,Header/IDB02/CdtrIBAN,Header/IDB02/CdtrLcAcc,Header/IDB02/CdtrNm,Header/IDB02/ComParamH,Header/IDB02/ComParamCdH,Header/IDB02/CdtrFIAdrLine1,Header/IDB02/Tmp_PFACH,Header/IDB02/CdtrFIAdrLine2,Header/IDB02/Tmp_PSTL2"/>
+
+			<Maprule functionName="InsertElements" param="Header/IDB02/IntmNmBIC,Header/IDB02/IntmNm,Header/IDB02/ZI_IntrAgt1FIBIC,Header/IDB02/IntrmFIID,Header/IDB02/ZI_IntAg1Nm,Header/IDB02/ZI_IntAgt1AdrTwn,Header/IDB02/IntRmFICtry,Header/IDB02/Tmp_IntRmFICtry,Header/IDB02/ZI_IntAg1Account,Header/IDB02/CDTRACCTYP,Header/IDB02/ZH_DBTRACCTYP,Header/IDB02/ZI_IntAg1BrnchId,Header/IDB02/ZI_IntAg1AdrStr,Header/IDB02/ZI_IntAg1AdrPCd"/>
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/IDB02/Tmp_IDB02_FIIQUALI;"
+					 param2="(I3);"
+					 param3="Header/IDB02/IntmNmBIC,Header/IDB02/IntmNm,Header/IDB02/ZI_IntrAgt1FIBIC,Header/IDB02/IntrmFIID,Header/IDB02/ZI_IntAg1Nm,Header/IDB02/ZI_IntAgt1AdrTwn,Header/IDB02/IntRmFICtry,"
+					 param4="Header/IDB02/ZI_IntAg1Account,Header/IDB02/ZI_IntAg1BrnchId,Header/IDB02/ZI_IntAg1AdrStr,Header/IDB02/ZI_IntAg1AdrPCd,Header/IDB02/ZI_IntAg1AdrDept;"
+					 param5="Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKNAM,Header/IDB02/Tmp_IDB02_FIIBKENN,Header/IDB02/Tmp_IDB02_FIIBKUKN,Header/IDB02/Tmp_IDB02_FIIBKNAM,"
+					 param6="Header/IDB02/Tmp_IDB02_FIIBKORT,Header/IDB02/Tmp_IDB02_FIIBLAND,Header/IDB02/Tmp_IDB02_FIIKONTO,Header/IDB02/Tmp_IDB02_FIIBRANCH,Header/IDB02/Tmp_IDB02_STRAS,"
+					 param7="Header/IDB02/Tmp_IDB02_PSTLZ,Header/IDB02/Tmp_IDB02_PSTL2"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/IDB02/IntmNmBIC,Header/IDB02/IntmNm,Header/IDB02/ZI_IntrAgt1FIBIC,Header/IDB02/IntrmFIID,Header/IDB02/ZI_IntAg1Nm,Header/IDB02/ZI_IntAgt1AdrTwn,Header/IDB02/IntRmFICtry,Header/IDB02/Tmp_IntRmFICtry,Header/IDB02/ZI_IntAg1Account,Header/IDB02/CDTRACCTYP,Header/IDB02/ZH_DBTRACCTYP,Header/IDB02/ZI_IntAg1BrnchId,Header/IDB02/ZI_IntAg1AdrStr,Header/IDB02/ZI_IntAg1AdrPCd" />
+
+			<Maprule functionName="MoveChildrenV2" param="Header/IDB02;Header" />
+
+			<Maprule functionName="InsertElements" param="Header/Tmp_FIIBKORT,Header/CdtrFICtry,Header/CdtrLcAcc,Header/CdtrFIAdrLine1,Header/Tmp_PFACH,Header/CdtrFIAdrLine2,Header/Tmp_PSTL2"/>
+			<!-- set CdtrIBAN or CdtrLcAcc -->
+			<Maprule functionName="CompareAndSet" param="CdtrIBAN;[a-zA-Z]{2,2}[0-9]{2,2}.*;CdtrIBAN;CdtrIBAN;" />
+			<!-- fill CdtrFIAdrLine erster Aufruf noch nicht-->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/CdtrIBAN,Header/CdtrFIAdrLine1,Header/CdtrFIAdrLine1,Header/CdtrFIAdrLine2;"
+					 param2=".+,.+,^$,^$;"
+					 param3="Header/CdtrLcAcc,Header/Item/Tmp_PFACHText,Header/CdtrFIAdrLine1,Header/CdtrFIAdrLine2;"
+					 param4=",,Header/Tmp_PFACH,Header/Tmp_PSTL2;"
+					 param5="Header/CdtrLcAcc,Header/Item/Tmp_PFACHText,Header/CdtrFIAdrLine1,Header/CdtrFIAdrLine2;"
+			/>
+			<Maprule functionName="MoveElements" param="Header/CdtrFIAdrLine2,Header/Tmp_FIIBKORT,Header/CdtrFIAdrLine1;Header/Item/CdtrFIAdrLine2,Header/Item/Tmp_FIIBKORT,Header/Item/CdtrFIAdrLine1" />
+			<Maprule functionName="InsertElements" param="Header/Item/Tmp_CdtrFIAdrLine1,Header/Item/Tmp_CdtrFIAdrLine2;CdtrFIAdrLine1,CdtrFIAdrLine2" />
+			<Maprule functionName="ConcatFields" param="Header/Item/Tmp_CdtrFIAdrLine2,Header/Item/Tmp_FIIBKORT;Header/Item/CdtrFIAdrLine2; " />
+			<Maprule functionName="ConcatFields" param="Header/Item/Tmp_PFACHText,Header/Item/Tmp_CdtrFIAdrLine1;Header/Item/CdtrFIAdrLine1;" />
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/CdtrFIAdrLine1;P.O.Box.*;Header/CdtrFIAdrLine1;;Header/CdtrFIAdrLine1" />
+
+			<!-- delete Tmp-Fields IDB02 -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_IDB02,Header/Tmp_IDB02_FIIQUALI,Header/Tmp_IDB02_FIIBKENN,Header/Tmp_IDB02_FIIBKCDE,Header/Tmp_IDB02_FIIBKUKN,Header/Tmp_IDB02_FIIBKNAM,Header/Tmp_IDB02_FIIBKORT,Header/Tmp_IDB02_FIIBLAND,Header/Tmp_IDB02_FIIKONTO,Header/Tmp_IDB02_FIIKNAME,Header/Tmp_IDB02_FIIKNAM2" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_IDB02_FIIKWAER,Header/Tmp_IDB02_COMNUMM1,Header/Tmp_IDB02_COMNART1,Header/Tmp_IDB02_FIIBKONT,Header/Tmp_IDB02_FIIBRANCH,Header/Tmp_IDB02_STRAS,Header/Tmp_IDB02_PFACH,Header/Tmp_IDB02_PSTLZ,Header/Tmp_IDB02_PSTL2" />
+
+			<!-- E1EDKA1: can occur 1-4 times -->
+			<!-- Logic for filling the name and address fields      -->
+			<!-- CreditTransfer and Check:                          -->
+			<!-- qualifier AG -> Iptr fields                        -->
+			<!--           ZA -> Dbtr fields                        -->
+			<!--           ZE -> Cdtr fields                        -->
+			<!--           BE  -> Cdtr fields if ZE does not exist  -->
+			<!-- DirectDebit:                                       -->
+			<!-- qualifier BE -> Iptr fields                        -->
+			<!--           ZE -> Dbtr fields                        -->
+			<!--           ZA -> Cdtr fields                        -->
+			<!--           AG -> Cdtr fields if ZE does not exist   -->
+
+
+
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_E1EDKA1_PARTN,Header/EDKA1/Tmp_E1EDKA1_LIFNR,Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,Header/EDKA1/Tmp_E1EDKA1_STRAS,Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_PFACH,Header/EDKA1/Tmp_E1EDKA1_ORT01,Header/EDKA1/Tmp_E1EDKA1_PSTLZ,Header/EDKA1/Tmp_E1EDKA1_PSTL2,Header/EDKA1/Tmp_E1EDKA1_LAND1,Header/EDKA1/Tmp_E1EDKA1_REGIO" />
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_AG_PARVW,Header/EDKA1/Tmp_AG_IptrNmH1,Header/EDKA1/Tmp_AG_IptrNmH2,Header/EDKA1/Tmp_AG_IptrNmH3,Header/EDKA1/Tmp_AG_IptrNmH4,Header/EDKA1/Tmp_AG_DbtrNm1,Header/EDKA1/Tmp_AG_DbtrNm2,Header/EDKA1/Tmp_AG_DbtrNm3,Header/EDKA1/Tmp_AG_DbtrNm4,Header/EDKA1/Tmp_AG_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_AG_PFACH_IptrAdrLineH2,Header/EDKA1/Tmp_AG_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_AG_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_AG_DbtrCtryH,Header/EDKA1/Tmp_AG_IptrAdrCtry,Header/EDKA1/Tmp_AG_CustSpzRefH" />
+
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/EDKA1/Tmp_E1EDKA1_NAME1;Header/EDKA1/Tmp_E1EDKA1_NAME2;Header/EDKA1/Tmp_E1EDKA1_NAME2;;Header/EDKA1/Tmp_E1EDKA1_NAME2" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="AG;"
+					 param3="Header/EDKA1/Tmp_AG_PARVW,Header/EDKA1/Tmp_AG_IptrNmH1,Header/EDKA1/Tmp_AG_IptrNmH2,Header/EDKA1/Tmp_AG_IptrNmH3,Header/EDKA1/Tmp_AG_IptrNmH4,Header/EDKA1/Tmp_AG_DbtrNm1,"
+					 param4="Header/EDKA1/Tmp_AG_DbtrNm2,Header/EDKA1/Tmp_AG_DbtrNm3,Header/EDKA1/Tmp_AG_DbtrNm4,Header/EDKA1/Tmp_AG_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_AG_PFACH_IptrAdrLineH2,"
+					 param5="Header/EDKA1/Tmp_AG_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_AG_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_AG_DbtrCtryH,Header/EDKA1/Tmp_AG_IptrAdrCtry;"
+					 param6="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,Header/EDKA1/Tmp_E1EDKA1_NAME1,"
+					 param7="Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,Header/EDKA1/Tmp_E1EDKA1_STRAS,Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_ORT01,"
+					 param8="Header/EDKA1/Tmp_E1EDKA1_PSTLZ,Header/EDKA1/Tmp_E1EDKA1_PSTL2,Header/EDKA1/Tmp_E1EDKA1_LAND1,Header/EDKA1/Tmp_E1EDKA1_LAND1"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_AG_PARVW,Header/EDKA1/Tmp_AG_IptrNmH1,Header/EDKA1/Tmp_AG_IptrNmH2,Header/EDKA1/Tmp_AG_IptrNmH3,Header/EDKA1/Tmp_AG_IptrNmH4,Header/EDKA1/Tmp_AG_DbtrNm1,Header/EDKA1/Tmp_AG_DbtrNm2,Header/EDKA1/Tmp_AG_DbtrNm3,Header/EDKA1/Tmp_AG_DbtrNm4,Header/EDKA1/Tmp_AG_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_AG_PFACH_IptrAdrLineH2,Header/EDKA1/Tmp_AG_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_AG_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_AG_DbtrCtryH,Header/EDKA1/Tmp_AG_IptrAdrCtry" />
+
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_ZE_PARVW,Header/EDKA1/Tmp_ZE_CdtrNm1,Header/EDKA1/Tmp_ZE_CdtrNm2,Header/EDKA1/Tmp_ZE_CdtrNm3,Header/EDKA1/Tmp_ZE_CdtrNm4,Header/EDKA1/Tmp_ZE_STRAS_CdtrAdrLine1,Header/EDKA1/Tmp_ZE_STRAS2_CdtrAdrLine2,Header/EDKA1/Tmp_ZE_PFACH_CdtrAdrLineH1,Header/EDKA1/Tmp_ZE_ORT_CdtrAdrLine4,Header/EDKA1/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/EDKA1/Tmp_ZE_PSTL2_CdtrAdrLine3,Header/EDKA1/Tmp_ZE_CdtrCtry" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="ZE;"
+					 param3="Header/EDKA1/Tmp_ZE_PARVW,Header/EDKA1/Tmp_ZE_CdtrNm1,Header/EDKA1/Tmp_ZE_CdtrNm2,Header/EDKA1/Tmp_ZE_CdtrNm3,Header/EDKA1/Tmp_ZE_CdtrNm4,Header/EDKA1/Tmp_ZE_STRAS_CdtrAdrLine1,"
+					 param4="Header/EDKA1/Tmp_ZE_STRAS2_CdtrAdrLine2,Header/EDKA1/Tmp_ZE_PFACH_CdtrAdrLineH1,Header/EDKA1/Tmp_ZE_ORT_CdtrAdrLine4,Header/EDKA1/Tmp_ZE_PSTLZ_CdtrAdrLine3,"
+					 param5="Header/EDKA1/Tmp_ZE_PSTL2_CdtrAdrLine3,Header/EDKA1/Tmp_ZE_CdtrCtry;"
+					 param6="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,"
+					 param7="Header/EDKA1/Tmp_E1EDKA1_STRAS,Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_PFACH,Header/EDKA1/Tmp_E1EDKA1_ORT01,Header/EDKA1/Tmp_E1EDKA1_PSTLZ,"
+					 param8="Header/EDKA1/Tmp_E1EDKA1_PSTL2,Header/EDKA1/Tmp_E1EDKA1_LAND1"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_ZE_PARVW,Header/EDKA1/Tmp_ZE_CdtrNm1,Header/EDKA1/Tmp_ZE_CdtrNm2,Header/EDKA1/Tmp_ZE_CdtrNm3,Header/EDKA1/Tmp_ZE_CdtrNm4,Header/EDKA1/Tmp_ZE_STRAS_CdtrAdrLine1,Header/EDKA1/Tmp_ZE_STRAS2_CdtrAdrLine2,Header/EDKA1/Tmp_ZE_PFACH_CdtrAdrLineH1,Header/EDKA1/Tmp_ZE_ORT_CdtrAdrLine4,Header/EDKA1/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/EDKA1/Tmp_ZE_PSTL2_CdtrAdrLine3,Header/EDKA1/Tmp_ZE_CdtrCtry" />
+
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_BE_PARVW,Header/EDKA1/Tmp_BE_CdtrNm1,Header/EDKA1/Tmp_BE_CdtrNm2,Header/EDKA1/Tmp_BE_CdtrNm3,Header/EDKA1/Tmp_BE_CdtrNm4,Header/EDKA1/Tmp_BE_STRAS_CdtrAdrLine1,Header/EDKA1/Tmp_BE_STRAS2_CdtrAdrLine2,Header/EDKA1/Tmp_BE_PFACH_CdtrAdrLineH1,Header/EDKA1/Tmp_BE_ORT_CdtrAdrLine4,Header/EDKA1/Tmp_BE_PSTLZ_CdtrAdrLine3,Header/EDKA1/Tmp_BE_PSTL2_CdtrAdrLine3,Header/EDKA1/Tmp_BE_CdtrCtry,Header/EDKA1/Tmp_BE_CustSpzRefH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="BE;"
+					 param3="Header/EDKA1/Tmp_BE_PARVW,Header/EDKA1/Tmp_BE_CdtrNm1,Header/EDKA1/Tmp_BE_CdtrNm2,Header/EDKA1/Tmp_BE_CdtrNm3,Header/EDKA1/Tmp_BE_CdtrNm4,Header/EDKA1/Tmp_BE_STRAS_CdtrAdrLine1,"
+					 param4="Header/EDKA1/Tmp_BE_STRAS2_CdtrAdrLine2,Header/EDKA1/Tmp_BE_PFACH_CdtrAdrLineH1,Header/EDKA1/Tmp_BE_ORT_CdtrAdrLine4,Header/EDKA1/Tmp_BE_PSTLZ_CdtrAdrLine3,"
+					 param5="Header/EDKA1/Tmp_BE_PSTL2_CdtrAdrLine3,Header/EDKA1/Tmp_BE_CdtrCtry;"
+					 param6="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,"
+					 param7="Header/EDKA1/Tmp_E1EDKA1_STRAS,Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_PFACH,Header/EDKA1/Tmp_E1EDKA1_ORT01,Header/EDKA1/Tmp_E1EDKA1_PSTLZ,"
+					 param8="Header/EDKA1/Tmp_E1EDKA1_PSTL2,Header/EDKA1/Tmp_E1EDKA1_LAND1"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_BE_PARVW,Header/EDKA1/Tmp_BE_CdtrNm1,Header/EDKA1/Tmp_BE_CdtrNm2,Header/EDKA1/Tmp_BE_CdtrNm3,Header/EDKA1/Tmp_BE_CdtrNm4,Header/EDKA1/Tmp_BE_STRAS_CdtrAdrLine1,Header/EDKA1/Tmp_BE_STRAS2_CdtrAdrLine2,Header/EDKA1/Tmp_BE_PFACH_CdtrAdrLineH1,Header/EDKA1/Tmp_BE_ORT_CdtrAdrLine4,Header/EDKA1/Tmp_BE_PSTLZ_CdtrAdrLine3,Header/EDKA1/Tmp_BE_PSTL2_CdtrAdrLine3,Header/EDKA1/Tmp_BE_CdtrCtry,Header/EDKA1/Tmp_BE_CustSpzRefH" />
+
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_DZE_PARVW,Header/EDKA1/Tmp_DZE_IptrNmH1,Header/EDKA1/Tmp_DZE_IptrNmH2,Header/EDKA1/Tmp_DZE_IptrNmH3,Header/EDKA1/Tmp_DZE_IptrNmH4,Header/EDKA1/Tmp_DZE_DbtrNm1,Header/EDKA1/Tmp_DZE_DbtrNm2,Header/EDKA1/Tmp_DZE_DbtrNm3,Header/EDKA1/Tmp_DZE_DbtrNm4,Header/EDKA1/Tmp_DZE_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_DZE_PFACH_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_DZE_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_DbtrCtryH,Header/EDKA1/Tmp_DZE_IptrPrvncKeyH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="ZE;"
+					 param3="Header/EDKA1/Tmp_DZE_PARVW,Header/EDKA1/Tmp_DZE_IptrNmH1,Header/EDKA1/Tmp_DZE_IptrNmH2,Header/EDKA1/Tmp_DZE_IptrNmH3,Header/EDKA1/Tmp_DZE_IptrNmH4,Header/EDKA1/Tmp_DZE_DbtrNm1,"
+					 param4="Header/EDKA1/Tmp_DZE_DbtrNm2,Header/EDKA1/Tmp_DZE_DbtrNm3,Header/EDKA1/Tmp_DZE_DbtrNm4,Header/EDKA1/Tmp_DZE_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_DZE_PFACH_IptrAdrLineH2,"
+					 param5="Header/EDKA1/Tmp_DZE_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_DZE_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_DbtrCtryH,Header/EDKA1/Tmp_DZE_IptrPrvncKeyH;"
+					 param6="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,"
+					 param7="Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,Header/EDKA1/Tmp_E1EDKA1_STRAS,"
+					 param8="Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_ORT01,Header/EDKA1/Tmp_E1EDKA1_PSTLZ,Header/EDKA1/Tmp_E1EDKA1_PSTL2,Header/EDKA1/Tmp_E1EDKA1_LAND1,Header/EDKA1/Tmp_E1EDKA1_REGIO"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_DZE_PARVW,Header/EDKA1/Tmp_DZE_IptrNmH1,Header/EDKA1/Tmp_DZE_IptrNmH2,Header/EDKA1/Tmp_DZE_IptrNmH3,Header/EDKA1/Tmp_DZE_IptrNmH4,Header/EDKA1/Tmp_DZE_DbtrNm1,Header/EDKA1/Tmp_DZE_DbtrNm2,Header/EDKA1/Tmp_DZE_DbtrNm3,Header/EDKA1/Tmp_DZE_DbtrNm4,Header/EDKA1/Tmp_DZE_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_DZE_PFACH_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_DZE_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_DZE_DbtrCtryH,Header/EDKA1/Tmp_DZE_IptrPrvncKeyH" />
+
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_DBE_PARVW,Header/EDKA1/Tmp_DBE_IptrNmH1,Header/EDKA1/Tmp_DBE_IptrNmH2,Header/EDKA1/Tmp_DBE_IptrNmH3,Header/EDKA1/Tmp_DBE_IptrNmH4,Header/EDKA1/Tmp_DBE_DbtrNm1,Header/EDKA1/Tmp_DBE_DbtrNm2,Header/EDKA1/Tmp_DBE_DbtrNm3,Header/EDKA1/Tmp_DBE_DbtrNm4,Header/EDKA1/Tmp_DBE_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_DBE_PFACH_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_DBE_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_DbtrCtryH,Header/EDKA1/Tmp_DBE_IptrPrvncKeyH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="BE;"
+					 param3="Header/EDKA1/Tmp_DBE_PARVW,Header/EDKA1/Tmp_DBE_IptrNmH1,Header/EDKA1/Tmp_DBE_IptrNmH2,Header/EDKA1/Tmp_DBE_IptrNmH3,Header/EDKA1/Tmp_DBE_IptrNmH4,Header/EDKA1/Tmp_DBE_DbtrNm1,"
+					 param4="Header/EDKA1/Tmp_DBE_DbtrNm2,Header/EDKA1/Tmp_DBE_DbtrNm3,Header/EDKA1/Tmp_DBE_DbtrNm4,Header/EDKA1/Tmp_DBE_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_DBE_PFACH_IptrAdrLineH2,"
+					 param5="Header/EDKA1/Tmp_DBE_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_DBE_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_DbtrCtryH,Header/EDKA1/Tmp_DBE_IptrPrvncKeyH;"
+					 param6="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,"
+					 param7="Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,Header/EDKA1/Tmp_E1EDKA1_STRAS,"
+					 param8="Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_ORT01,Header/EDKA1/Tmp_E1EDKA1_PSTLZ,Header/EDKA1/Tmp_E1EDKA1_PSTL2,Header/EDKA1/Tmp_E1EDKA1_LAND1,Header/EDKA1/Tmp_E1EDKA1_REGIO"
+			/>
+
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_DBE_PARVW,Header/EDKA1/Tmp_DBE_IptrNmH1,Header/EDKA1/Tmp_DBE_IptrNmH2,Header/EDKA1/Tmp_DBE_IptrNmH3,Header/EDKA1/Tmp_DBE_IptrNmH4,Header/EDKA1/Tmp_DBE_DbtrNm1,Header/EDKA1/Tmp_DBE_DbtrNm2,Header/EDKA1/Tmp_DBE_DbtrNm3,Header/EDKA1/Tmp_DBE_DbtrNm4,Header/EDKA1/Tmp_DBE_STRAS_IptrAdrLineH1,Header/EDKA1/Tmp_DBE_PFACH_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_ORT_IptrAdrLineH3,Header/EDKA1/Tmp_DBE_PSTLZ_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_PSTL2_IptrAdrLineH2,Header/EDKA1/Tmp_DBE_DbtrCtryH,Header/EDKA1/Tmp_DBE_IptrPrvncKeyH" />
+
+			<!-- fill Dbtr from ZA -->
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_ZA_DbtrNm1,Header/EDKA1/Tmp_ZA_DbtrNm2,Header/EDKA1/Tmp_ZA_DbtrNm3,Header/EDKA1/Tmp_ZA_DbtrNm4,Header/EDKA1/Tmp_ZA_DbtrAdrLineH1,Header/EDKA1/Tmp_ZA_DbtrAdrLineH2,Header/EDKA1/Tmp_ZA_DbtrCtryH,Header/EDKA1/Tmp_ZA_IptrAdrCtry" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="ZA;"
+					 param3="Header/EDKA1/Tmp_ZA_DbtrNm1,Header/EDKA1/Tmp_ZA_DbtrNm2,Header/EDKA1/Tmp_ZA_DbtrNm3,Header/EDKA1/Tmp_ZA_DbtrNm4,Header/EDKA1/Tmp_ZA_DbtrAdrLineH1,Header/EDKA1/Tmp_ZA_DbtrAdrLineH2,"
+					 param4="Header/EDKA1/Tmp_ZA_DbtrCtryH,Header/EDKA1/Tmp_ZA_IptrAdrCtry;"
+					 param5="Header/EDKA1/Tmp_E1EDKA1_NAME1,Header/EDKA1/Tmp_E1EDKA1_NAME2,Header/EDKA1/Tmp_E1EDKA1_NAME3,Header/EDKA1/Tmp_E1EDKA1_NAME4,Header/EDKA1/Tmp_E1EDKA1_STRAS,"
+					 param6="Header/EDKA1/Tmp_E1EDKA1_STRS2,Header/EDKA1/Tmp_E1EDKA1_LAND1,Header/EDKA1/Tmp_E1EDKA1_LAND1"
+			/>
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_ZA_DbtrNm1,Header/EDKA1/Tmp_ZA_DbtrNm2,Header/EDKA1/Tmp_ZA_DbtrNm3,Header/EDKA1/Tmp_ZA_DbtrNm4,Header/EDKA1/Tmp_ZA_DbtrAdrLineH1,Header/EDKA1/Tmp_ZA_DbtrAdrLineH2,Header/EDKA1/Tmp_ZA_DbtrCtryH,Header/EDKA1/Tmp_ZA_IptrAdrCtry,,Header/EDKA1/Tmp_BE_CustSpzRefH" />
+
+			<!-- Partnernummer, Lieferantennummer -->
+			<Maprule functionName="InsertElements" param="Header/EDKA1/Tmp_BE_CdtrId,Header/EDKA1/Tmp_BE_DeptConDes,Header/EDKA1/Tmp_ZE_CdtrId,Header/EDKA1/Tmp_ZE_DeptConDes" />
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/EDKA1/Tmp_EDKA1_PARVW;BE;Header/EDKA1/Tmp_BE_CdtrId,Header/EDKA1/Tmp_BE_DeptConDes;Header/EDKA1/Tmp_E1EDKA1_PARTN,Header/EDKA1/Tmp_E1EDKA1_LIFNR"/>
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/EDKA1/Tmp_EDKA1_PARVW;ZE;Header/EDKA1/Tmp_ZE_CdtrId,Header/EDKA1/Tmp_ZE_DeptConDes;Header/EDKA1/Tmp_E1EDKA1_PARTN1,Header/EDKA1/Tmp_E1EDKA1_LIFNR"/>
+			<!-- Lieferantennummer beim Kunden -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/EDKA1/Tmp_EDKA1_PARVW,Header/EDKA1/Tmp_EDKA1_PARVW;"
+					 param2="AG,BE;"
+					 param3="Header/EDKA1/Tmp_AG_CustSpzRefH,Header/EDKA1/Tmp_BE_CustSpzRefH;"
+					 param4="Header/EDKA1/Tmp_E1EDKA1_LIFNR,Header/EDKA1/Tmp_E1EDKA1_LIFNR;"
+					 param5="Header/EDKA1/Tmp_AG_CustSpzRefH,Header/EDKA1/Tmp_BE_CustSpzRefH"
+			/>
+			<Maprule functionName="DeleteIfEmpty" param="Header/EDKA1/Tmp_BE_CdtrId,Header/EDKA1/Tmp_BE_DeptConDes,Header/EDKA1/Tmp_ZE_CdtrId,Header/EDKA1/Tmp_ZE_DeptConDes" />
+
+			<Maprule functionName="MoveChildrenV2" param="Header/EDKA1;Header" />
+			<Maprule functionName="DeleteNodeIfEmpty" param="Header/IDB02,Header/EDKA1" />
+
+			<Maprule functionName="InsertElements" param="Header/Tmp_DD_IptrNmH1,Header/Tmp_DD_IptrNmH2,Header/Tmp_DD_IptrNmH3,Header/Tmp_DD_IptrNmH4,Header/Tmp_DD_DbtrNm1,Header/Tmp_DD_DbtrNm2,Header/Tmp_DD_DbtrNm3,Header/Tmp_DD_DbtrNm4" />
+			<Maprule functionName="InsertElements" param="Header/Tmp_DZE_PARVW,Header/Tmp_DZE_IptrNmH1,Header/Tmp_DZE_IptrNmH2,Header/Tmp_DZE_IptrNmH3,Header/Tmp_DZE_IptrNmH4,Header/Tmp_DZE_DbtrNm1,Header/Tmp_DZE_DbtrNm2,Header/Tmp_DZE_DbtrNm3,Header/Tmp_DZE_DbtrNm4,Header/Tmp_DBE_IptrNmH1,Header/Tmp_DBE_IptrNmH2,Header/Tmp_DBE_IptrNmH3,Header/Tmp_DBE_IptrNmH4,Header/Tmp_DBE_IptrNmH4,Header/Tmp_DBE_DbtrNm1,Header/Tmp_DBE_DbtrNm2,Header/Tmp_DBE_DbtrNm3,Header/Tmp_DBE_DbtrNm4" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_DZE_PARVW;"
+					 param2="ZE;"
+					 param3="Header/Tmp_DD_IptrNmH1,Header/Tmp_DD_IptrNmH2,Header/Tmp_DD_IptrNmH3,Header/Tmp_DD_IptrNmH4,"
+					 param4="Header/Tmp_DD_DbtrNm1,Header/Tmp_DD_DbtrNm2,Header/Tmp_DD_DbtrNm3,Header/Tmp_DD_DbtrNm4;"
+					 param5="Header/Tmp_DZE_IptrNmH1,Header/Tmp_DZE_IptrNmH2,Header/Tmp_DZE_IptrNmH3,Header/Tmp_DZE_IptrNmH4,"
+					 param6="Header/Tmp_DZE_DbtrNm1,Header/Tmp_DZE_DbtrNm2,Header/Tmp_DZE_DbtrNm3,Header/Tmp_DZE_DbtrNm4;"
+					 param7="Header/Tmp_DBE_IptrNmH1,Header/Tmp_DBE_IptrNmH2,Header/Tmp_DBE_IptrNmH3,Header/Tmp_DBE_IptrNmH4,"
+					 param8="Header/Tmp_DBE_DbtrNm1,Header/Tmp_DBE_DbtrNm2,Header/Tmp_DBE_DbtrNm3,Header/Tmp_DBE_DbtrNm4;"
+			/>
+
+
+			<Maprule functionName="InsertElements" param="Header/Tmp_DD_STRAS_IptrAdrLineH1,Header/Tmp_DD_PFACH_IptrAdrLineH2,Header/Tmp_DD_ORT_IptrAdrLineH3,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTL2_IptrAdrLineH2,Header/Tmp_DD_IptrPrvncKeyH" />
+			<Maprule functionName="InsertElements" param="Header/Tmp_DZE_STRAS_IptrAdrLineH1,Header/Tmp_DZE_PFACH_IptrAdrLineH2,Header/Tmp_DZE_ORT_IptrAdrLineH3,Header/Tmp_DZE_PSTLZ_IptrAdrLineH2,Header/Tmp_DZE_PSTL2_IptrAdrLineH2,Header/Tmp_DZE_IptrPrvncKeyH,Header/Tmp_DBE_STRAS_IptrAdrLineH1,Header/Tmp_DBE_PFACH_IptrAdrLineH2,Header/Tmp_DBE_ORT_IptrAdrLineH3,Header/Tmp_DBE_PSTLZ_IptrAdrLineH2,Header/Tmp_DBE_PSTL2_IptrAdrLineH2,Header/Tmp_DBE_IptrPrvncKeyH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_DZE_PARVW;"
+					 param2="ZE;"
+					 param3="Header/Tmp_DD_STRAS_IptrAdrLineH1,Header/Tmp_DD_PFACH_IptrAdrLineH2,Header/Tmp_DD_ORT_IptrAdrLineH3,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,"
+					 param4="Header/Tmp_DD_PSTL2_IptrAdrLineH2,Header/Tmp_DD_IptrPrvncKeyH;"
+					 param5="Header/Tmp_DZE_STRAS_IptrAdrLineH1,Header/Tmp_DZE_PFACH_IptrAdrLineH2,Header/Tmp_DZE_ORT_IptrAdrLineH3,Header/Tmp_DZE_PSTLZ_IptrAdrLineH2,"
+					 param6="Header/Tmp_DZE_PSTL2_IptrAdrLineH2,Header/Tmp_DZE_IptrPrvncKeyH;"
+					 param7="Header/Tmp_DBE_STRAS_IptrAdrLineH1,Header/Tmp_DBE_PFACH_IptrAdrLineH2,Header/Tmp_DBE_ORT_IptrAdrLineH3,Header/Tmp_DBE_PSTLZ_IptrAdrLineH2,"
+					 param8="Header/Tmp_DBE_PSTL2_IptrAdrLineH2,Header/Tmp_DBE_IptrPrvncKeyH;"
+			/>
+			<!-- EDKA1: Fill Dbtr from AG only if ZA not available -->
+			<Maprule functionName="InsertElements" param="Header/DbtrCtryH,Header/Tmp_ZA_DbtrCtryH,Header/Tmp_AG_DbtrCtryH,Header/DbtrAdrLineH1,Header/DbtrAdrLineH2" />
+			<Maprule functionName="InsertElements" param="Header/Tmp_ZA_DbtrNm1,Header/Tmp_ZA_DbtrNm2,Header/Tmp_ZA_DbtrNm3,Header/Tmp_ZA_DbtrNm4,Header/Tmp_AG_DbtrNm1,Header/Tmp_AG_DbtrNm2,Header/Tmp_AG_DbtrNm3,Header/Tmp_AG_DbtrNm4,Header/Tmp_ZA_DbtrAdrLineH1,Header/Tmp_ZA_DbtrAdrLineH2,Header/Tmp_AG_IptrNmH1,Header/Tmp_AG_IptrNmH2,Header/Tmp_AG_IptrNmH3,Header/Tmp_AG_IptrNmH4" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZA_DbtrCtryH,Header/Tmp_ZA_DbtrNm1,Header/Tmp_ZA_DbtrNm2,Header/Tmp_ZA_DbtrNm3,"
+					 param2="Header/Tmp_ZA_DbtrNm4,Header/Tmp_ZA_DbtrAdrLineH1,Header/Tmp_ZA_DbtrAdrLineH2;"
+					 param3="^$,.+,.+,.+,.+,.+,.+;"
+					 param4="Header/DbtrCtryH,Header/Tmp_AG_DbtrNm1,Header/Tmp_AG_DbtrNm2,Header/Tmp_AG_DbtrNm3,"
+					 param5="Header/Tmp_AG_DbtrNm4,Header/DbtrAdrLineH1,Header/DbtrAdrLineH2;"
+					 param6="Header/Tmp_AG_DbtrCtryH,Header/Tmp_ZA_DbtrNm1,Header/Tmp_ZA_DbtrNm2,Header/Tmp_ZA_DbtrNm3,"
+					 param7="Header/Tmp_ZA_DbtrNm4,Header/Tmp_ZA_DbtrAdrLineH1,Header/Tmp_ZA_DbtrAdrLineH2;"
+					 param8="Header/Tmp_ZA_DbtrCtryH,Header/Tmp_AG_DbtrNm1,Header/Tmp_AG_DbtrNm2,Header/Tmp_AG_DbtrNm3,"
+					 param9="Header/Tmp_AG_DbtrNm4,Header/DbtrAdrLineH1,Header/DbtrAdrLineH2;"
+			/>
+			<Maprule functionName="InsertElements" param="Header/Tmp_IptrNmH1,Header/Tmp_IptrNmH2,Header/Tmp_IptrNmH3,Header/Tmp_IptrNmH4,Header/Tmp_DbtrNm1,Header/Tmp_DbtrNm2,Header/Tmp_DbtrNm3,Header/Tmp_DbtrNm4" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/PmtMtdH;"
+					 param2="(Credit Transfer)|(Check);"
+					 param3="Header/Tmp_IptrNmH1,Header/Tmp_IptrNmH2,Header/Tmp_IptrNmH3,Header/Tmp_IptrNmH4,"
+					 param4="Header/Tmp_DbtrNm1,Header/Tmp_DbtrNm2,Header/Tmp_DbtrNm3,Header/Tmp_DbtrNm4;"
+					 param5="Header/Tmp_AG_IptrNmH1,Header/Tmp_AG_IptrNmH2,Header/Tmp_AG_IptrNmH3,Header/Tmp_AG_IptrNmH4,"
+					 param6="Header/Tmp_AG_DbtrNm1,Header/Tmp_AG_DbtrNm2,Header/Tmp_AG_DbtrNm3,Header/Tmp_AG_DbtrNm4;"
+					 param7="Header/Tmp_DD_IptrNmH1,Header/Tmp_DD_IptrNmH2,Header/Tmp_DD_IptrNmH3,Header/Tmp_DD_IptrNmH4,"
+					 param8="Header/Tmp_DD_DbtrNm1,Header/Tmp_DD_DbtrNm2,Header/Tmp_DD_DbtrNm3,Header/Tmp_DD_DbtrNm4;"
+			/>
+			<!-- IptrNmH/DbtrNm from EDKA1: Name 1-4 concat -->
+			<Maprule functionName="InsertElements" param="Header/Item/IptrNmH,Header/Item/DbtrNm,Header/Tmp_CdtrNm" />
+			<Maprule functionName="MoveElements" param="Header/Tmp_IptrNmH1,Header/Tmp_IptrNmH2,Header/Tmp_IptrNmH3,Header/Tmp_IptrNmH4;Header/Item/Tmp_IptrNmH1,Header/Item/Tmp_IptrNmH2,Header/Item/Tmp_IptrNmH3,Header/Item/Tmp_IptrNmH4" />
+			<Maprule functionName="ConcatFields" param="Header/Item/Tmp_IptrNmH1,Header/Item/Tmp_IptrNmH2,Header/Item/Tmp_IptrNmH3,Header/Item/Tmp_IptrNmH4;Header/Item/IptrNmH; " />
+			<Maprule functionName="MoveElements" param="Header/Item/IptrNmH;Header/IptrNmH" />
+			<Maprule functionName="MoveElements" param="Header/Tmp_DbtrNm1,Header/Tmp_DbtrNm2,Header/Tmp_DbtrNm3,Header/Tmp_DbtrNm4,Header/Tmp_CdtrNm;Header/Item/Tmp_DbtrNm1,Header/Item/Tmp_DbtrNm2,Header/Item/Tmp_DbtrNm3,Header/Item/Tmp_DbtrNm4,Header/Item/Tmp_CdtrNm" />
+			<Maprule functionName="ConcatFields" param="Header/Item/Tmp_DbtrNm1,Header/Item/Tmp_DbtrNm2,Header/Item/Tmp_DbtrNm3,Header/Item/Tmp_DbtrNm4;Header/Item/DbtrNm; " />
+
+			<Maprule functionName="InsertElements" param="Header/IptrAdrLineH1,Header/IptrAdrLineH2,Header/IptrAdrLineH3,Header/IptrPrvncKeyH,Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,Header/Tmp_AG_PSTL2_IptrAdrLineH2,Header/Tmp_AG_PFACH_IptrAdrLineH2,Header/Tmp_DD_PSTL2_IptrAdrLineH2,Header/Tmp_DD_PFACH_IptrAdrLineH2,Header/Tmp_AG_STRAS_IptrAdrLineH1,Header/Tmp_DD_IptrPrvncKeyH" />
+			<Maprule functionName="InsertElements" param="Header/Item/DbtrAdrLine1,Header/Item/DbtrAdrLine2,Header/Item/DbtrAdrLine3" />
+			<Maprule functionName="XPathMultiCmpareAndSet" 
+					 param="Header/IptrArLineH1,Header/IptrArLineH2,Header/IptrArLineH3;"
+					 param2=".*;"
+					 param3="Header/Item/DbtrAdrLine1,Header/Item/DbtrAdrLine2,Header/Item/DbtrAdrLine3" />
+			<Maprule functionName="InsertElements" param="Header/Item/ReqdExctnDtInd" />		 
+			<Maprule functionName="XPathMultiCmpareAndSet" 
+					 param="Header/ReqdExctnDtH;"
+					 param2=".*;"
+					 param3="Header/Item/ReqdExctnDtInd" />		 
+			<Maprule functionName="XPathMultiCmpareAndSet" 
+					 param="Header/ReqdExctnDtH;"
+					 param2=".*;"
+					 param3="Header/Item/ReqdExctnDtInd" />		 
+					 		 
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_AG_PSTLZ_IptrAdrLineH2;"
+					 param2="^$;"
+					 param3="Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTLZ_IptrAdrLineH2;"
+					 param4="Header/Tmp_AG_PSTL2_IptrAdrLineH2,Header/Tmp_AG_PFACH_IptrAdrLineH2,Header/Tmp_DD_PSTL2_IptrAdrLineH2,Header/Tmp_DD_PFACH_IptrAdrLineH2;"
+					 param5="Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTLZ_IptrAdrLineH2;"
+			/>
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/PmtMtdH;"
+					 param2="(Credit Transfer)|(Check);"
+					 param3="Header/IptrAdrLineH1,Header/IptrAdrLineH2,Header/IptrAdrLineH3;"
+					 param4="Header/Tmp_AG_STRAS_IptrAdrLineH1,Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_AG_ORT_IptrAdrLineH3;"
+					 param5="Header/Tmp_DD_STRAS_IptrAdrLineH1,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_ORT_IptrAdrLineH3;"
+			/>
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/Tmp_DD_IptrPrvncKeyH;.+;Header/IptrPrvncKeyH;Header/Tmp_DD_IptrPrvncKeyH;Header/IptrPrvncKeyH" />
+
+			<!-- set Cdtr/UlmtCdtr Nm -->
+			<!-- Concat ZE BE Qualifier -->
+			<Maprule functionName="InsertElements" param="Header/TMP_ZEBE_IND,Header/Tmp_ZE_PARVW,Header/Tmp_BE_PARVW,Header/Tmp_ZE_CdtrNm1,Header/Tmp_ZE_CdtrNm2,Header/Tmp_ZE_CdtrNm3,Header/Tmp_ZE_CdtrNm4,Header/Tmp_BE_CdtrNm1,Header/Tmp_BE_CdtrNm2,Header/Tmp_BE_CdtrNm3,Header/Tmp_BE_CdtrNm4"/>
+			<Maprule functionName="ConcatFields" param="Header/Tmp_ZE_PARVW,Header/Tmp_BE_PARVW;Header/TMP_ZEBE_IND"/>
+			<!-- If both are set, the indicators for ZE/BE are overwritten so that the Cdtr/UltmtCdtr are set correctly. -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/TMP_ZEBE_IND;"
+					 param2="ZEBE;"
+					 param3="Header/Tmp_BE_PARVW,Header/Tmp_ZE_PARVW;"
+					 param4="XX,XX;"
+					 param5="Header/Tmp_BE_PARVW,Header/Tmp_ZE_PARVW;"
+			/>
+			<!-- ZE -->
+			<Maprule functionName="InsertElements" param="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZE_PARVW;"
+					 param2="ZE;"
+					 param3="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Tmp_CdtrNm4;"
+					 param4="Header/Tmp_ZE_CdtrNm1,Header/Tmp_ZE_CdtrNm2,Header/Tmp_ZE_CdtrNm3,Header/Tmp_ZE_CdtrNm4;"
+					 param5="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Tmp_CdtrNm4;"
+			/>
+			<!-- BE -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_BE_PARVW;"
+					 param2="BE;"
+					 param3="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4;"
+					 param4="Header/Tmp_BE_CdtrNm1,Header/Tmp_BE_CdtrNm2,Header/Tmp_BE_CdtrNm3,Header/Tmp_BE_CdtrNm4;"
+					 param5="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4;"
+			/>
+			<!-- Cdtr/UlmtCdtr -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/TMP_ZEBE_IND;"
+					 param2="ZEBE;"
+					 param3="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4;"
+					 param4="Header/Tmp_BE_CdtrNm1,Header/Tmp_BE_CdtrNm2,Header/Tmp_BE_CdtrNm3,Header/Tmp_BE_CdtrNm4;"
+					 param5="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4;"
+			/>
+			<Maprule functionName="DeleteIfEmpty" param="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4" />
+			<Maprule functionName="ConcatFields" param="Header/Item/Tmp_CdtrNm1,Header/Item/Tmp_CdtrNm2,Header/Item/Tmp_CdtrNm3,Header/Item/Tmp_CdtrNm4;Header/Item/UltmtCdtrNm; " />
+			<Maprule functionName="StringReplace" param="Header/Item/UltmtCdtrNm;(^ +)|( +$);"/>
+			<!-- ZA/AG ZH_IptrAdrCtry -->
+			<Maprule functionName="InsertElements" param="Header/Tmp_AG_IptrAdrCtry,Header/Tmp_ZA_IptrAdrCtry,Header/ZH_IptrAdrCtry" />
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/Tmp_AG_IptrAdrCtry;.+;Header/ZH_IptrAdrCtry;Header/Tmp_AG_IptrAdrCtry;Header/Tmp_ZA_IptrAdrCtry" />
+			<!-- AdrLine/Ctry  -->
+			<Maprule functionName="InsertElements" param="Header/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/Tmp_ZE_PSTL2_CdtrAdrLine3,Header/Tmp_BE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_PSTL2_CdtrAdrLine3,Header/Tmp_ZE_PFACH_CdtrAdrLineH1,Header/Tmp_BE_PFACH_CdtrAdrLineH1,Header/Tmp_ZE_STRAS_CdtrAdrLine1,Header/Tmp_ZE_STRAS2_CdtrAdrLine2,Header/Tmp_BE_STRAS_CdtrAdrLine1,Header/Tmp_BE_STRAS2_CdtrAdrLine2,Header/Tmp_BE_ORT_CdtrAdrLine4" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_PSTLZ_CdtrAdrLine3;"
+					 param2="^$,^$;"
+					 param3="Header/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_PSTLZ_CdtrAdrLine3;"
+					 param4="Header/Tmp_ZE_PSTL2_CdtrAdrLine3,Header/Tmp_BE_PSTL2_CdtrAdrLine3;"
+					 param5="Header/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_PSTLZ_CdtrAdrLine3;"
+			/>
+			<Maprule functionName="InsertElements" param="Header/CdtrAdrLineH1,Header/CdtrAdrLine1,Header/CdtrAdrLine2,Header/CdtrAdrLine3,Header/CdtrAdrLine4" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZE_PARVW,Header/Tmp_BE_PARVW;"
+					 param2="ZE,BE;"
+					 param3="Header/CdtrAdrLine2,Header/CdtrAdrLine2;"
+					 param4="Header/Tmp_ZE_PFACH_CdtrAdrLineH1,Header/Tmp_BE_PFACH_CdtrAdrLineH1;"
+					 param5="Header/CdtrAdrLine2,Header/CdtrAdrLine2;"
+			/>
+			<Maprule functionName="ConcatFields" param="Header/Tmp_ZE_STRAS_CdtrAdrLine1,Header/Tmp_ZE_STRAS2_CdtrAdrLine2;Header/Tmp_concat_STRAS" />
+			<Maprule functionName="ConcatFields" param="Header/Tmp_BE_STRAS_CdtrAdrLine1,Header/Tmp_BE_STRAS2_CdtrAdrLine2;Header/Tmp_concat_STRAS2" />
+			<!-- BE UltmtCdtr  -->
+			<Maprule functionName="InsertElements" param="Header/ZI_UltCdtrAdrL1,Header/ZI_UltCdtrAdrL2,Header/ZI_UltCdtrAdrL3,Header/ZI_UltCdtrAdrL4;,,,"/>
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/TMP_ZEBE_IND;"
+					 param2="ZEBE;"
+					 param3="Header/ZI_UltCdtrAdrL1,Header/ZI_UltCdtrAdrL2,Header/ZI_UltCdtrAdrL3,Header/ZI_UltCdtrAdrL4;"
+					 param4="Header/Tmp_concat_STRAS2,Header/Tmp_BE_PFACH_CdtrAdrLineH1,Header/Tmp_BE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_ORT_CdtrAdrLine4;"
+					 param5="Header/ZI_UltCdtrAdrL1,Header/ZI_UltCdtrAdrL2,Header/ZI_UltCdtrAdrL3,Header/ZI_UltCdtrAdrL4;"
+			/>
+			<!-- ZE/BE CdtrId DepConDes -->
+			<Maprule functionName="InsertElements" param="Header/Item/CdtrId,Header/Item/DeptConDes,Header/Item/UltmtCdtrId,Header/ZI_UltCdtrAdrSDe,Header/Tmp_ZE_CdtrId,Header/Tmp_BE_CdtrId,Header/Tmp_ZE_DeptConDes,Header/Tmp_BE_DeptConDes" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZE_PARVW;"
+					 param2="ZE;"
+					 param3="Header/Item/CdtrId,Header/Item/DeptConDes;"
+					 param4="Header/Tmp_ZE_CdtrId,Header/Tmp_ZE_DeptConDes;"
+					 param5="Header/Item/CdtrId,Header/Item/DeptConDes;"
+			/>
+			<!-- Cdtr/UltmtCdtr	CdtrId DepConDes -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_BE_PARVW;"
+					 param2="BE;"
+					 param3="Header/Item/CdtrId,Header/Item/DeptConDes;"
+					 param4="Header/Tmp_BE_CdtrId,Header/Tmp_BE_DeptConDes;"
+					 param5="Header/Item/CdtrId,Header/Item/DeptConDes;"
+			/>
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/TMP_ZEBE_IND;"
+					 param2="ZEBE;"
+					 param3="Header/Item/CdtrId,Header/Item/UltmtCdtrId,Header/Item/DeptConDes,Header/ZI_UltCdtrAdrSDe;"
+					 param4="Header/Tmp_ZE_CdtrId,Header/Tmp_ZE_CdtrId,Header/Tmp_ZE_DeptConDes,Header/Tmp_BE_DeptConDes;"
+					 param5="Header/Item/CdtrId,Header/Item/UltmtCdtrId,Header/Item/DeptConDes,Header/ZI_UltCdtrAdrSDe;"
+			/>
+			<Maprule functionName="MoveElements" param="Header/ZI_UltCdtrAdrL1,Header/ZI_UltCdtrAdrL2,Header/ZI_UltCdtrAdrL3,Header/ZI_UltCdtrAdrL4,Header/ZI_UltCdtrAdrSDe;Header/Item/ZI_UltCdtrAdrL1,Header/Item/ZI_UltCdtrAdrL2,Header/Item/ZI_UltCdtrAdrL3,Header/Item/ZI_UltCdtrAdrL4,Header/Item/ZI_UltCdtrAdrSDe" />
+
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/Tmp_ZE_PARVW;XX;Header/Tmp_ZE_PARVW;ZE;Header/Tmp_ZE_PARVW" />
+			<!-- ZE AdrLine 1 -->
+			<!-- ZE AdrLine 3 u. 4  -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZE_PARVW;"
+					 param2="ZE;"
+					 param3="Header/CdtrAdrLine1,Header/CdtrAdrLine3,Header/CdtrAdrLine4;"
+					 param4="Header/Tmp_concat_STRAS,Header/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/Tmp_ZE_ORT_CdtrAdrLine4;"
+					 param5="Header/CdtrAdrLine1,Header/CdtrAdrLine3,Header/CdtrAdrLine4;"
+			/>
+			<!-- BE AdrLine 1 -->
+			<!-- BE AdrLine 3 u. 4  -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_BE_PARVW;"
+					 param2="BE;"
+					 param3="Header/CdtrAdrLine1,Header/CdtrAdrLine3,Header/CdtrAdrLine4;"
+					 param4="Header/Tmp_concat_STRAS2,Header/Tmp_BE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_ORT_CdtrAdrLine4;"
+					 param5="Header/CdtrAdrLine1,Header/CdtrAdrLine3,Header/CdtrAdrLine4;"
+			/>
+			<Maprule functionName="MoveElements" param="Header/CdtrAdrLine1,Header/CdtrAdrLine2,Header/CdtrAdrLine3,Header/CdtrAdrLine4;Header/Item/CdtrAdrLine1,Header/Item/CdtrAdrLine2,Header/Item/CdtrAdrLine3,Header/Item/CdtrAdrLine4" />
+
+			<!-- ZE/BE AdrLine 3 u. 4  -->
+			<Maprule functionName="InsertElements" param="Header/Item/CdtrCtry" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Tmp_ZE_PARVW,Header/Tmp_BE_PARVW;"
+					 param2="ZE,BE;"
+					 param3="Header/Item/CdtrCtry,Header/Item/CdtrCtry;"
+					 param4="Header/Tmp_ZE_CdtrCtry,Header/Tmp_BE_CdtrCtry;"
+					 param5="Header/Item/CdtrCtry,Header/Item/CdtrCtry;"
+			/>
+			<!-- Change Header/Item fields -->
+			<!-- Monika -->
+			<Maprule functionName="MoveElements" param="Header/MaFaelligDate,Header/Zahlungsbeleg,Header/PmtMtd,Header/InstrKey1,Header/InstrKeyX,Header/InstrKey2,Header/InstrKey3,Header/InstrKey4,Header/PaymRegul,Header/ZBUKR,Header/PAYINDATE,Header/ChqMrtryDt,Header/ChqNb,Header/ReqdExctnDtH;Header/Item/MaFaelligDate,Header/Item/Zahlungsbeleg,Header/Item/PmtMtd,Header/Item/InstrKey1,Header/Item/InstrKeyX,Header/Item/InstrKey2,Header/Item/InstrKey3,Header/Item/InstrKey4,Header/Item/PaymRegul,Header/Item/ZBUKR,Header/Item/PAYINDATE,Header/Item/ChqMrtryDt,Header/Item/ChqNb,Header/Item/ReqdExctnDtInd" />
+			
+			<Maprule functionName="MoveElements" param="Header/AmtCcy,Header/DbtrFIBIC,Header/DbtrLcAcc,Header/CdtrFIBIC,Header/CdtrFIID,Header/CdtrFICtry,Header/CdtrIBAN,Header/CdtrLcAcc,Header/CdtrNm,Header/DbtrBankname,Header/CdtrFINm;Header/Item/AmtCcy,Header/Item/DbtrFIBIC,Header/Item/DbtrLcAcc,Header/Item/CdtrFIBIC,Header/Item/CdtrFIID,Header/Item/CdtrFICtry,Header/Item/CdtrIBAN,Header/Item/CdtrLcAcc,Header/Item/CdtrNm,Header/Item/DbtrBankname,Header/Item/CdtrFINm" />
+			<Maprule functionName="MoveElements" param="Header/CdtrFIAdrLine1,Header/CdtrFIAdrLine2,Header/IntmNmBIC,Header/IntmNm,Header/IntmAdrLine3,Header/DbtrNm,Header/NmPhoneOrdCus,Header/ZI_IntAg1Account,Header/IntrmFIID;Header/Item/CdtrFIAdrLine1,Header/Item/CdtrFIAdrLine2,Header/Item/IntmNmBIC,Header/Item/IntmNm,Header/Item/IntmAdrLine3,Header/Item/DbtrNm,Header/Item/NmPhoneOrdCus,Header/Item/ZI_IntAg1Account,Header/Item/IntrmFIID" />
+			<Maprule functionName="MoveElements" param="Header/RmtInf1,Header/RmtInf2,Header/RmtInf3,Header/RmtInf4,Header/RmtInf5,Header/RmtInf6,Header/RmtInf7;Header/Item/RmtInf1,Header/Item/RmtInf2,Header/Item/RmtInf3,Header/Item/RmtInf4,Header/Item/RmtInf5,Header/Item/RmtInf6,Header/Item/RmtInf7" />
+			<Maprule functionName="MoveElements" param="Header/RmtInf8,Header/RmtInf9,Header/RmtInf10,Header/RmtInf11,Header/RmtInf12,Header/RmtInf13,Header/RmtInf14;Header/Item/RmtInf8,Header/Item/RmtInf9,Header/Item/RmtInf10,Header/Item/RmtInf11,Header/Item/RmtInf12,Header/Item/RmtInf13,Header/Item/RmtInf14" />
+			<!-- Z-fields -->
+			<Maprule functionName="InsertElements" param="Header/ZI_IntrAgt1FIBIC,Header/ZI_IntAg1Nm,Header/ZI_IntAgt1AdrTwn,Header/ZI_IntAg1AdrCtry,Header/ZI_IntAg1BrnchNm,Header/ZI_IntAg1AdrStr,Header/ZI_IntAg1AdrPCd,Header/ZI_IntAg1AdrDept,Header/Tmp_ZI_IntrAgt1FIBIC,Header/Tmp_ZI_IntAg1Nm,Header/Tmp_ZI_IntAgt1AdrTwn,Header/Tmp_ZI_IntAg1AdrCtry,Header/Tmp_ZI_IntAg1BrnchNm,Header/Tmp_ZI_IntAg1AdrStr,Header/Tmp_ZI_IntAg1AdrPCd,Header/Tmp_ZI_IntAg1AdrDept,Header/Tmp_IntrAgt1FIBIC,Header/Tmp_IntAg1Nm,Header/Item/ST/ZI_SRmtRDocRelDt" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/ZI_IntrAgt1FIBIC,Header/ZI_IntAg1Nm,Header/ZI_IntAgt1AdrTwn,Header/IntRmFICtry,"
+					 param2="Header/ZI_IntAg1BrnchId,Header/ZI_IntAg1AdrStr,Header/ZI_IntAg1AdrDept;"
+					 param3="^$,^$,^$,^$,^$,^$,^$;"
+					 param4="Header/ZI_IntrAgt1FIBIC,Header/ZI_IntAg1Nm,Header/ZI_IntAgt1AdrTwn,Header/IntRmFICtry,"
+					 param5="Header/ZI_IntAg1BrnchId,Header/ZI_IntAg1AdrStr,Header/ZI_IntAg1AdrDept;"
+					 param6="Header/Tmp_IntrAgt1FIBIC,Header/Tmp_IntAg1Nm,Header/Tmp_ZI_IntAgt1AdrTwn,Header/Tmp_IntRmFICtry,"
+					 param7="Header/Tmp_IntAg1BrnchId,Header/Tmp_ZI_IntAg1AdrStr,Header/Tmp_ZI_IntAg1AdrDept;"
+					 param8="Header/ZI_IntrAgt1FIBIC,Header/ZI_IntAg1Nm,Header/ZI_IntAgt1AdrTwn,Header/IntRmFICtry,"
+					 param9="Header/ZI_IntAg1BrnchId,Header/ZI_IntAg1AdrStr,Header/ZI_IntAg1AdrDept;"
+			/>
+			<Maprule functionName="MoveElements"  param="Header/ZI_IntrAgt1FIBIC,Header/ZI_IntAg1Nm,Header/ZI_IntAgt1AdrTwn,Header/IntRmFICtry,Header/ZI_IntAg1BrnchId,Header/ZI_IntAg1AdrStr,Header/ZI_IntAg1AdrPCd,Header/ZI_IntAg1AdrDept,Header/CDTRACCTYP;Header/Item/ZI_IntrAgt1FIBIC,Header/Item/ZI_IntAg1Nm,Header/Item/ZI_IntAgt1AdrTwn,Header/Item/IntRmFICtry,Header/Item/ZI_IntAg1BrnchId,Header/Item/ZI_IntAg1AdrStr,Header/Item/ZI_IntAg1AdrPCd,Header/Item/ZI_IntAg1AdrDept,Header/Item/CDTRACCTYP" />
+			<Maprule functionName="SetAddFieldsAuto" param="SET;ZI_IntAgt1AdrTwn,ZI_IntAg1AdrStr,ZI_IntAg1AdrPCd,ZI_IntAg1AdrDept,ZI_IntrAgt1FIBIC,ZI_IntAg1Nm,ZI_MndFinalDt,ZI_MndFirstDt,ZI_IntAg1Account,ZI_UltCdtrAdrL1,ZI_UltCdtrAdrL2,ZI_UltCdtrAdrL3,ZI_UltCdtrAdrL4,ZI_SRmtRDocRelDt" />
+			<Maprule functionName="SetAddFieldsAuto" param="SET;ZH_DBTRACCTYP,ZH_IptrAdrCtry,ZH_IptrFICity" />
+			<Maprule functionName="ConcatFields"  param="Header/Tmp_OrgnlDbtrNm1,Header/Tmp_OrgnlDbtrNm2;Header/OrgnlDbtrNm; "/>
+			<Maprule functionName="MoveElements" param="Header/PurposeCd,Header/EndToEndId,Header/MndtId,Header/OrgnlMndtId,Header/DtOfSgntr,Header/OrgnlDbtrId,Header/UltmtDbtrNm,Header/UltmtDbtrId,Header/DbtrNmIdent,Header/SvcLvlCd,Header/AmdmntInd,Header/OrgnlMndtId,Header/OrgnlDbtrId,Header/OrgnlCdtrIBAN,Header/OrgnlCdtrFIID,Header/OrgnlDbtrNm,Header/ZI_MndFirstDt,Header/ZI_MndFinalDt;Header/Item/PurposeCd,Header/Item/EndToEndId,Header/Item/MndtId,Header/Item/OrgnlMndtId,Header/Item/DtOfSgntr,Header/Item/OrgnlDbtrId,Header/Item/UltmtDbtrNm,Header/Item/UltmtDbtrId,Header/Item/DbtrNmIdent,Header/Item/SvcLvlCd,Header/Item/AmdmntInd,Header/Item/OrgnlMndtId,Header/Item/OrgnlDbtrId,Header/Item/OrgnlCdtrIBAN,Header/Item/OrgnlCdtrFIID,Header/Item/OrgnlDbtrNm,Header/Item/ZI_MndFirstDt,Header/Item/ZI_MndFinalDt" />
+			<Maprule functionName="SetAddFieldsAuto" param="SET;ZH_PaymtypH1,ZH_PaymtypH2" />
+			<!-- Since the BIC in IDB02 can be in two fields, the field FIIBKENN is checked/accepted first, then FIIBKUKN. -->
+			<Maprule functionName="InsertElements" param="Header/DbtrFIBICH,Header/TmpKENN_DbtrFIBICH,Header/TmpKUKN_DbtrFIBICH" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/DbtrFIBICH;"
+					 param2="^$;"
+					 param3="Header/DbtrFIBICH,Header/DbtrFIBICH;"
+					 param4="Header/TmpKENN_DbtrFIBICH,Header/TmpKUKN_DbtrFIBICH;"
+					 param5="Header/DbtrFIBICH,Header/DbtrFIBICH;"
+			/>
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/TmpKENN_DbtrFIBICH,Header/TmpKUKN_DbtrFIBICH;"
+					 param2=".+,.+;"
+					 param3="Header/TmpKENN_DbtrFIBICH,Header/TmpKUKN_DbtrFIBICH;"
+					 param4=",;"
+					 param5=",;"
+			/>
+			<Maprule functionName="DeleteIfEmpty" param="Header/TmpKENN_DbtrFIBICH,Header/TmpKUKN_DbtrFIBICH" />
+			<!-- delete TMP-Fields -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_EDKA1_PARVW,Header/Tmp_E1EDKA1_PARTN,Header/Tmp_E1EDKA1_LIFNR,Header/Tmp_E1EDKA1_NAME1,Header/Tmp_E1EDKA1_NAME2,Header/Tmp_E1EDKA1_NAME3,Header/Tmp_E1EDKA1_NAME4" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_E1EDKA1_STRAS,Header/Tmp_E1EDKA1_STRS2,Header/Tmp_E1EDKA1_PFACH,Header/Tmp_E1EDKA1_ORT01,Header/Tmp_E1EDKA1_PSTLZ,Header/Tmp_E1EDKA1_PSTL2,Header/Tmp_E1EDKA1_LAND1,Header/Tmp_E1EDKA1_REGIO" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_AG_PARVW,Header/Tmp_AG_IptrNmH1,Header/Tmp_AG_IptrNmH2,Header/Tmp_AG_IptrNmH3,Header/Tmp_AG_IptrNmH4,Header/Tmp_AG_DbtrNm1,Header/Tmp_AG_DbtrNm2,Header/Tmp_AG_DbtrNm3,Header/Tmp_AG_DbtrNm4,Header/Tmp_AG_STRAS_IptrAdrLineH1,Header/Tmp_AG_PFACH_IptrAdrLineH2,Header/Tmp_AG_ORT_IptrAdrLineH3,Header/Tmp_AG_PSTLZ_IptrAdrLineH2,Header/Tmp_AG_PSTL2_IptrAdrLineH2,Header/Tmp_AG_DbtrCtryH,Header/Tmp_AG_IptrAdrCtry" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_ZE_PARVW,Header/Tmp_ZE_CdtrNm1,Header/Tmp_ZE_CdtrNm2,Header/Tmp_ZE_STRAS_CdtrAdrLine1,Header/Tmp_ZE_STRAS2_CdtrAdrLine2,Header/Tmp_ZE_PFACH_CdtrAdrLineH1,Header/Tmp_ZE_ORT_CdtrAdrLine4,Header/Tmp_ZE_PSTLZ_CdtrAdrLine3,Header/Tmp_ZE_PSTL2_CdtrAdrLine3,Header/Tmp_ZE_CdtrCtry" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_BE_PARVW,Header/Tmp_BE_CdtrNm1,Header/Tmp_BE_CdtrNm2,Header/Tmp_BE_STRAS_CdtrAdrLine1,Header/Tmp_BE_STRAS2_CdtrAdrLine2,Header/Tmp_BE_PFACH_CdtrAdrLineH1,Header/Tmp_BE_ORT_CdtrAdrLine4,Header/Tmp_BE_PSTLZ_CdtrAdrLine3,Header/Tmp_BE_PSTL2_CdtrAdrLine3,Header/Tmp_BE_CdtrCtry" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_DZE_PARVW,Header/Tmp_DZE_IptrNmH1,Header/Tmp_DZE_IptrNmH2,Header/Tmp_DZE_IptrNmH3,Header/Tmp_DZE_IptrNmH4,Header/Tmp_DZE_DbtrNm1,Header/Tmp_DZE_DbtrNm2,Header/Tmp_DZE_DbtrNm3,Header/Tmp_DZE_DbtrNm4,Header/Tmp_DZE_STRAS_IptrAdrLineH1,Header/Tmp_DZE_PFACH_IptrAdrLineH2,Header/Tmp_DZE_ORT_IptrAdrLineH3,Header/Tmp_DZE_PSTLZ_IptrAdrLineH2,Header/Tmp_DZE_PSTL2_IptrAdrLineH2,Header/Tmp_DZE_DbtrCtryH,Header/Tmp_DZE_IptrPrvncKeyH" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_DBE_PARVW,Header/Tmp_DBE_IptrNmH1,Header/Tmp_DBE_IptrNmH2,Header/Tmp_DBE_IptrNmH3,Header/Tmp_DBE_IptrNmH4,Header/Tmp_DBE_DbtrNm1,Header/Tmp_DBE_DbtrNm2,Header/Tmp_DBE_DbtrNm3,Header/Tmp_DBE_DbtrNm4,Header/Tmp_DBE_STRAS_IptrAdrLineH1,Header/Tmp_DBE_PFACH_IptrAdrLineH2,Header/Tmp_DBE_ORT_IptrAdrLineH3,Header/Tmp_DBE_PSTLZ_IptrAdrLineH2,Header/Tmp_DBE_PSTL2_IptrAdrLineH2,Header/Tmp_DBE_DbtrCtryH,Header/Tmp_DBE_IptrAdrCtry" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_ZA_DbtrNm1,Header/Tmp_ZA_DbtrNm2,Header/Tmp_ZA_DbtrNm3,Header/Tmp_ZA_DbtrNm4,Header/Tmp_ZA_DbtrAdrLineH1,Header/Tmp_ZA_DbtrAdrLineH2,Header/Tmp_ZA_DbtrCtryH,Header/Tmp_ZA_IptrAdrCtry,Header/Tmp_AG_CustSpzRefH,Header/Tmp_BE_CustSpzRefH" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_BE_CdtrId,Header/Tmp_BE_DeptConDes,Header/Tmp_ZE_CdtrId,Header/Tmp_ZE_DeptConDes" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_DD_IptrNmH1,Header/Tmp_DD_IptrNmH2,Header/Tmp_DD_IptrNmH3,Header/Tmp_DD_IptrNmH4,Header/Tmp_DD_DbtrNm1,Header/Tmp_DD_DbtrNm2,Header/Tmp_DD_DbtrNm3,Header/Tmp_DD_DbtrNm4" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_DD_STRAS_IptrAdrLineH1,Header/Tmp_DD_PFACH_IptrAdrLineH2,Header/Tmp_DD_ORT_IptrAdrLineH3,Header/Tmp_DD_PSTLZ_IptrAdrLineH2,Header/Tmp_DD_PSTL2_IptrAdrLineH2,Header/Tmp_DD_IptrPrvncKeyH" />
+			<!-- Amounts from  E1IDPU5, can occur 1-4 times -->
+			<Maprule functionName="InsertElements" param="Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy" />
+			<Maprule functionName="SetFieldIndex" param="Header/Item/ST/Tmp_IDPU5_MOAQUAL,Header/Item/ST/Tmp_SRmtRDoc_Amt,Header/Item/ST/Tmp_SRmtRDoc_Ccy" />
+			<Maprule functionName="InsertElements" param="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy5" />
+			<!-- invoice -->
+			<!-- discount  -->
+			<!-- tax  -->
+			<!-- credit -->
+			<!-- net  -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,"
+					 param2="Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,"
+					 param3="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,"
+					 param4="Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,"
+					 param5="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,"
+					 param6="Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,"
+					 param7="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,"
+					 param8="Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,"
+					 param9="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,"
+					 param10="Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_IDPU5_MOAQUAL5;"
+					 param11="004,004,004,004,004,004,004,004,004,004,003,003,003,003,003,003,003,003,003,003,005,005,005,005,005,005,005,005,005,005,016,016,016,016,016,016,016,016,016,016,006,006,006,006,006,006,006,006,006,006;"
+					 param12="Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,"
+					 param13="Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,"
+					 param14="Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,"
+					 param15="Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,"
+					 param16="Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,"
+					 param17="Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,"
+					 param18="Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,"
+					 param19="Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,"
+					 param20="Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,"
+					 param21="Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy;"
+					 param22="Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_SRmtRDoc_Amt2,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_SRmtRDoc_Amt3,"
+					 param23="Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_SRmtRDoc_Amt4,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_SRmtRDoc_Amt5,Header/Item/ST/Tmp_SRmtRDoc_Ccy5,"
+					 param24="Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_SRmtRDoc_Amt2,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_SRmtRDoc_Amt3,"
+					 param25="Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_SRmtRDoc_Amt4,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_SRmtRDoc_Amt5,Header/Item/ST/Tmp_SRmtRDoc_Ccy5,"
+					 param26="Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_SRmtRDoc_Amt2,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_SRmtRDoc_Amt3,"
+					 param27="Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_SRmtRDoc_Amt4,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_SRmtRDoc_Amt5,Header/Item/ST/Tmp_SRmtRDoc_Ccy5,"
+					 param28="Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_SRmtRDoc_Amt2,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_SRmtRDoc_Amt3,"
+					 param29="Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_SRmtRDoc_Amt4,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_SRmtRDoc_Amt5,Header/Item/ST/Tmp_SRmtRDoc_Ccy5,"
+					 param30="Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_SRmtRDoc_Amt2,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_SRmtRDoc_Amt3,"
+					 param31="Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_SRmtRDoc_Amt4,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_SRmtRDoc_Amt5,Header/Item/ST/Tmp_SRmtRDoc_Ccy5;"
+					 param32="Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,"
+					 param33="Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,Header/Item/ST/SRmtRDocDPAmt,Header/Item/ST/SRmtRDocDPCcy,"
+					 param34="Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,"
+					 param35="Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,Header/Item/ST/SRmtRDocDPyA,Header/Item/ST/SRmtRDocDPyC,"
+					 param36="Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,"
+					 param37="Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,Header/Item/ST/SRmtRDocTAmt,Header/Item/ST/SRmtRDocTCcy,"
+					 param38="Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,"
+					 param39="Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,Header/Item/ST/SRmtRDocCNAmt,Header/Item/ST/SRmtRDocCNCcy,"
+					 param40="Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,"
+					 param41="Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy,Header/Item/ST/SRmtRDocRmAmt,Header/Item/ST/SRmtRDocRmCcy;"
+			/>
+			<!-- delete Tmp-Fields -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Item/ST/Tmp_IDPU5_MOAQUAL1,Header/Item/ST/Tmp_SRmtRDoc_Amt1,Header/Item/ST/Tmp_SRmtRDoc_Ccy1,Header/Item/ST/Tmp_IDPU5_MOAQUAL2,Header/Item/ST/Tmp_SRmtRDoc_Amt2,Header/Item/ST/Tmp_SRmtRDoc_Ccy2,Header/Item/ST/Tmp_IDPU5_MOAQUAL3,Header/Item/ST/Tmp_SRmtRDoc_Amt3,Header/Item/ST/Tmp_SRmtRDoc_Ccy3,Header/Item/ST/Tmp_IDPU5_MOAQUAL4,Header/Item/ST/Tmp_SRmtRDoc_Amt4,Header/Item/ST/Tmp_SRmtRDoc_Ccy4,Header/Item/ST/Tmp_IDPU5_MOAQUAL5,Header/Item/ST/Tmp_SRmtRDoc_Amt5,Header/Item/ST/Tmp_SRmtRDoc_Ccy5" />
+			<!-- Document date segment from EDP03  -->
+			<Maprule functionName="InsertElements" param="Header/Item/ST/SRmtRDocRelDt" />
+			<Maprule functionName="SetFieldIndex" param="Header/Item/ST/Tmp_EDP03_IDDAT,Header/Item/ST/Tmp_SRmtRDocRelDt" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP03_IDDAT1,Header/Item/ST/Tmp_EDP03_IDDAT2,Header/Item/ST/Tmp_EDP03_IDDAT3,Header/Item/ST/Tmp_EDP03_IDDAT4;"
+					 param2="016,016,016,016;"
+					 param3="Header/Item/ST/SRmtRDocRelDt,Header/Item/ST/SRmtRDocRelDt,Header/Item/ST/SRmtRDocRelDt,Header/Item/ST/SRmtRDocRelDt;"
+					 param4="Header/Item/ST/Tmp_SRmtRDocRelDt1,Header/Item/ST/Tmp_SRmtRDocRelDt2,Header/Item/ST/Tmp_SRmtRDocRelDt3,Header/Item/ST/Tmp_SRmtRDocRelDt4;"
+					 param5="Header/Item/ST/SRmtRDocRelDt,Header/Item/ST/SRmtRDocRelDt,Header/Item/ST/SRmtRDocRelDt,Header/Item/ST/SRmtRDocRelDt;"
+			/>
+			<!-- delete Tmp-Fields -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Item/ST/Tmp_EDP03_IDDAT1,Header/Item/ST/Tmp_EDP03_IDDAT2,Header/Item/ST/Tmp_EDP03_IDDAT3,Header/Item/ST/Tmp_EDP03_IDDAT4,Header/Item/ST/Tmp_SRmtRDocRelDt1,Header/Item/ST/Tmp_SRmtRDocRelDt2,Header/Item/ST/Tmp_SRmtRDocRelDt3,Header/Item/ST/Tmp_SRmtRDocRelDt4" />
+			<!-- Document reference data from EDP02, can occur 1-4 times  -->
+			<Maprule functionName="InsertElements" param="Header/Item/ST/SRmtRDocNb,Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,Header/Item/ST/SRmtCdtrRef" />
+			<Maprule functionName="SetFieldIndex" param="Header/Item/ST/Tmp_EDP02_QUALF,Header/Item/ST/Tmp_SRmtRDoc_Nb,Header/Item/ST/Tmp_SRmtRDoc_Dt" />
+			<!-- Invoice No. -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF2,"
+					 param2="Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4,Header/Item/ST/Tmp_EDP02_QUALF5;"
+					 param3="009,009,009,009,009,009,009,009;"
+					 param4="Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt,Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt,"
+					 param5="Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt,Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt;"
+					 param6="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Dt1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Dt2,"
+					 param7="Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Dt3,Header/Item/ST/Tmp_SRmtRDoc_Nb4,Header/Item/ST/Tmp_SRmtRDoc_Dt4;"
+					 param8="Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt,Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt,"
+					 param9="Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt,Header/Item/ST/SRmtRDocNb,Header/Item/ST/ZI_SRmtRDocRelDt;"
+			/>
+			<!-- HR reference text of the settled item -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF2,"
+					 param2="Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4,Header/Item/ST/Tmp_EDP02_QUALF4;"
+					 param3="070,070,070,070,070,070,070,070;"
+					 param4="Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,"
+					 param5="Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt;"
+					 param6="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Dt1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Dt2,"
+					 param7="Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Dt3,Header/Item/ST/Tmp_SRmtRDoc_Nb4,Header/Item/ST/Tmp_SRmtRDoc_Dt4;"
+					 param8="Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,"
+					 param9="Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt,Header/Item/ST/SRmtRDocTxtNb,Header/Item/ST/SRmtRDocRelTxtDt;"
+			/>
+			<!-- credit -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF2,"
+					 param2="Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4,Header/Item/ST/Tmp_EDP02_QUALF4;"
+					 param3="028,028,028,028,028,028,028,028;"
+					 param4="Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,"
+					 param5="Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt;"
+					 param6="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Dt1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Dt2,"
+					 param7="Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Dt3,Header/Item/ST/Tmp_SRmtRDoc_Nb4,Header/Item/ST/Tmp_SRmtRDoc_Dt4;"
+					 param8="Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,"
+					 param9="Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt,Header/Item/ST/SRmtRDocCrNb,Header/Item/ST/SRmtRDocRelCrDt;"
+			/>
+			<!-- Internal No. (document)) -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF2,"
+					 param2="Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4,Header/Item/ST/Tmp_EDP02_QUALF4;"
+					 param3="010,010,010,010,010,010,010,010;"
+					 param4="Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,"
+					 param5="Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt;"
+					 param6="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Dt1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Dt2,"
+					 param7="Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Dt3,Header/Item/ST/Tmp_SRmtRDoc_Nb4,Header/Item/ST/Tmp_SRmtRDoc_Dt4;"
+					 param8="Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,"
+					 param9="Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt,Header/Item/ST/SRmtRDocIntNb,Header/Item/ST/SRmtRDocRelIntDt;"
+			/>
+			<!-- KIDNO No. -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF2,"
+					 param2="Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4,Header/Item/ST/Tmp_EDP02_QUALF4;"
+					 param3="071,071,071,071,071,071,071,071;"
+					 param4="Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,"
+					 param5="Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt;"
+					 param6="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Dt1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Dt2,"
+					 param7="Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Dt3,Header/Item/ST/Tmp_SRmtRDoc_Nb4,Header/Item/ST/Tmp_SRmtRDoc_Dt4;"
+					 param8="Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,"
+					 param9="Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt,Header/Item/ST/SRmtRDocKIDNb,Header/Item/ST/SRmtRDocRelKIDDt;"
+			/>
+			<!-- ESR No. -->
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4;"
+					 param2="019,019,019,019;"
+					 param3="Header/Item/ST/SRmtCdtrRef,Header/Item/ST/SRmtCdtrRef,Header/Item/ST/SRmtCdtrRef,Header/Item/ST/SRmtCdtrRef;"
+					 param4="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Nb4;"
+					 param5="Header/Item/ST/SRmtCdtrRef,Header/Item/ST/SRmtCdtrRef,Header/Item/ST/SRmtCdtrRef,Header/Item/ST/SRmtCdtrRef;"
+			/>
+			<!-- EDP02 Qualifier 070 (reference text) can occur 2 times, is concatenated together -->
+			<Maprule functionName="SetFieldIndex" param="Header/Item/ST/SRmtRDocTxtNb"/>
+			<Maprule functionName="ConcatFields"  param="Header/Item/ST/SRmtRDocTxtNb1,Header/Item/ST/SRmtRDocTxtNb2;Header/Item/ST/SRmtRDocTxtNb;"/>
+			<!-- Delete Tmp-fields -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Item/ST/SRmtRDocTxtNb1,Header/Item/ST/SRmtRDocTxtNb2" />
+			<!-- CdtrESRNr, is first split into 3 fields after '-', moved from ST to Item with StreamFunction and reformatted. -->
+			<!-- von 9999P in 00009999P bzw. von 99-ZZZZZ9-P in 99999999P -->
+			<!-- P = Prüfziffer, Z = Nullenunterdrückung -->
+			<Maprule functionName="InsertElements" param="Header/Item/ST/Tmp_CdtrESRNr1" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4;"
+					 param2="020,020,020,020;"
+					 param3="Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1;"
+					 param4="Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Nb4;"
+					 param5="Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1;"
+			/>
+			<Maprule functionName="InsertElements" param="Header/Item/ST/Tmp_CdtrESRNr2,Header/Item/ST/Tmp_CdtrESRNr3,Header/Item/ST/ZI_CdtrESRNr" />
+			<Maprule functionName="XPathMultiCompareAndSet"
+					 param1="Header/Item/ST/Tmp_CdtrESRNr2,Header/Item/ST/Tmp_CdtrESRNr3,Header/Item/ST/ZI_CdtrESRNr;"
+					 param2=".*,.*,.*;"
+					 param3="Header/Item/ST/Tmp_CdtrESRNr2,Header/Item/ST/Tmp_CdtrESRNr2,Header/Item/ST/ZI_CdtrESRNr;"
+					 param4="Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1;"
+					 param5="Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr1;"
+			/>
+			<Maprule functionName="StringReplace" param="Header/Item/ST/Tmp_CdtrESRNr1;-.+;" />
+			<Maprule functionName="StringReplace" param="Header/Item/ST/Tmp_CdtrESRNr1;^(\d+-)|(-\d+)$;" /> <!-- StringAdjust(0;R;6)"  -->
+			<Maprule functionName="StringReplace" param="Header/Item/ST/Tmp_CdtrESRNr1;.+-;" />
+			<!-- CdtrESRNr and ZI_CdtrESRNr move from ST to Item -->
+			<Maprule functionName="MoveElements" param="Header/Item/ST/Tmp_CdtrESRNr1,Header/Item/ST/Tmp_CdtrESRNr2,Header/Item/ST/Tmp_CdtrESRNr3,Header/Item/ST/ZI_CdtrESRNr;Header/Item/Tmp_CdtrESRNr1,Header/Item/Tmp_CdtrESRNr2,Header/Item/Tmp_CdtrESRNr3,Header/Item/ZI_CdtrESRNr" />
+			<!-- Concatenate and format parts of the ESRNr in the CdtrESRNr field -->
+			<!-- von 9999P in 00009999P bzw. von 99-ZZZZZ9-P in 99999999P -->
+			<!-- P = check digit, Z = zero suppression  -->
+			<Maprule functionName="CompareAndSet" param="Tmp_CdtrESRNr1;\d{5,};Tmp_CdtrESRNr2;;Tmp_CdtrESRNr2" />
+			<Maprule functionName="CompareAndSet" param="Tmp_CdtrESRNr1;\d{5,};Tmp_CdtrESRNr3;;Tmp_CdtrESRNr3" />
+			<Maprule functionName="ConcatFields"  param="Header/Item/Tmp_CdtrESRNr1,Header/Item/Tmp_CdtrESRNr2,Header/Item/Tmp_CdtrESRNr3;Header/Item/CdtrESRNr;"/>
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/Item/CdtrESRNr;\d{9};Header/Item/Tmp_CdtrESRNr1;;0000;" />
+			<Maprule functionName="ConcatFields"  param="Header/Item/Tmp_CdtrESRNr1,Header/Item/CdtrESRNr;Header/Item/CdtrESRNr;"/>
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/Item/CdtrESRNr;0+;Header/Item/CdtrESRNr;;Header/Item/CdtrESRNr;" />
+			<!-- delete Tmp-Fields -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Item/Tmp_CdtrESRNr1,Header/Item/Tmp_CdtrESRNr2,Header/Item/Tmp_CdtrESRNr3" />
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Item/ST/Tmp_EDP02_QUALF1,Header/Item/ST/Tmp_EDP02_QUALF2,Header/Item/ST/Tmp_EDP02_QUALF3,Header/Item/ST/Tmp_EDP02_QUALF4,Header/Item/ST/Tmp_SRmtRDoc_Nb1,Header/Item/ST/Tmp_SRmtRDoc_Nb2,Header/Item/ST/Tmp_SRmtRDoc_Nb3,Header/Item/ST/Tmp_SRmtRDoc_Nb4,Header/Item/ST/Tmp_SRmtRDoc_Dt1,Header/Item/ST/Tmp_SRmtRDoc_Dt2,Header/Item/ST/Tmp_SRmtRDoc_Dt3,Header/Item/ST/Tmp_SRmtRDoc_Dt4" />
+			<!-- Customer supplier number from EDKA1 AG or BE -->
+			<Maprule functionName="InsertElements" param="Header/CustSpzRefH,Header/Tmp_AG_CustSpzRefH,Header/Tmp_BE_CustSpzRefH" />
+			<Maprule functionName="XPathMultiCompareAndSet" param="Header/PmtMtdH;(Credit Transfer)|(Check);Header/CustSpzRefH;Header/Tmp_AG_CustSpzRefH;Header/Tmp_BE_CustSpzRefH;" />
+			<!-- delete Tmp-Fields -->
+			<Maprule functionName="DeleteFieldOrNode" param="Header/Tmp_AG_CustSpzRefH,Header/Tmp_BE_CustSpzRefH" />
+			<!-- fill X_ fields -->
+			<Maprule functionName="InsertElements" param="Header/DbtrFIIDH,Header/DbtrFIBICH,Header/CustSpzRefH,Header/Item/DbtrLcAcc,Header/Item/DbtrLcAcc,Header/Item/CdtrFIID,Header/Item/InstdAmt,Header/Item/AmtCcy,Header/Item/RmtInf1,Header/Item/RmtInf2,Header/Item/RmtInf3,Header/Item/RmtInf4" />
+			<Maprule functionName="XPathMultiCmpareAndSet" 
+					 param="Header/DbtrFIIDH;"
+					 param2=".*;"
+					 param3="Header/Item/DbtrFIID" />	
+			<Maprule functionName="InsertElementsFirst" param="Header/X_IptrBankCode,Header/X_DbtrBIC,Header/X_CustSpzRef;DbtrFIIDH,DbtrFIBICH,CustSpzRefH" />
+			<Maprule functionName="InsertElementsFirst" param="Header/Item/X_DbtrAccount,Header/Item/X_CdtrBankCode,Header/Item/X_InstdAmt,Header/Item/X_AmtCcy;DbtrLcAcc,CdtrFIID,InstdAmt,AmtCcy" />
+			<Maprule functionName="InsertElementsFirst" param="Header/Item/X_RmtInf1,Header/Item/X_RmtInf2,Header/Item/X_RmtInf3,Header/Item/X_RmtInf4;RmtInf1,RmtInf2,RmtInf3,RmtInf4" />
+			<Maprule functionName="CopyElementsToTempFields" param="" />
+		</StreamFunctions>
+		<ValidationFunctionsXsdMeta>
+			<Maprule functionName="XmlSchemaValidation" param="IDOC_XML_MetaSchema.xsd;1" />
+		</ValidationFunctionsXsdMeta>
+		<ValidationFunctionsXsdData>
+			<Maprule functionName="XmlSchemaValidation" param="payExtSchema.xsd;1" />
+		</ValidationFunctionsXsdData>
+		<Description_de>
+			Erstellt eine Meta-Struktur mit zahlungsrelevanten Daten aus einem IDOC PEXR2002 XML Zahlungsträger
+
+			Technisch:
+			Der Import der Daten erfolgt über die Klasse CnvXml.
+		</Description_de>
+		<Description_en>
+			Generates a meta structure with payment-relevant data from a IDOC PEXR2002 XML payment medium.
+
+			Technical:
+			The import of data is performed using class CnvXml.
+		</Description_en>
+		<Description_fr>
+			Créé une structure meta avec des données relevant du paiement à partir d'un support
+			de paiement IDOC PEXR2002 XML.
+
+			Technique:
+			L'import des données s'opère par la classe CnvXml.
+		</Description_fr>
+		<Description_es>
+			Genera una metaestructura con datos relevantes para el pago a partir de un medio de pago XML IDOC PEXR2002.
+
+			Técnico:
+			La importación de datos se realiza utilizando la clase CnvXml.
+		</Description_es>
+		<Version>5</Version>
+		<CEVersion>3.7.5</CEVersion>
+		<CreateDate>20190517</CreateDate>
+		<ChangeDate>20190821</ChangeDate>
+	</ImpIDOC_XML>
+</Mappings>
+
